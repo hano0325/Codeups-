@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.button {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: rem(202);
+    color: $white;
+    font-size: rem(14);
+    padding: rem(14) rem(30);
+    line-height: 1.57142;
+    font-weight: $regular;
+    font-family: $Gotu-font;
+    background-color: $lightblue;
+    border: solid 1px $lightblue;
+    transition: .3s;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    background-color: $white;
+    border: solid 1px $lightblue;
+    bottom: -4px;
+    left: 4px;
+    right: -4px;
+    top: 4px;
+    z-index: -1;
+}
+
+.button::after {
+    content: url(../images/common/Vector.svg);
+    margin-left: rem(10);
+    position: absolute;
+    top: 23%;
+    z-index: 1;
+}
+
+
+.button:hover {
+    content: url(../images/common/Vector-green.svg);
+    color: $lightblue;
+    background-color: $white;
+}

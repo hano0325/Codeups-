@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.button {
+    display: inline-block;
+    position: relative;
+    width: rem(202);
+    color: $white;
+    font-size: rem(14);
+    padding: rem(14) ;
+    font-weight: $regular;
+    font-family: $Gotu-font;
+    background-color: $lightblue;
+}
+
+.button::before {
+    background-color: #fff;
+    border: solid 1px #408F95;
+    bottom: -4px;
+    content: "";
+    left: 4px;
+    position: absolute;
+    right: -4px;
+    top: 4px;
+    z-index: -1;
+}
+
+.button::after {
+
+}
+.button a {
+    
+    }

@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.button {
+    w202
+    color: $white;
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $Gotu-font;
+    background-color: $lightblue;
+}
+
+.button::before {
+    position: absolute;
+    top: -25px;
+    bottom: -25px;
+    left: -25px;
+    right: -25px;
+    z-index: -1;
+    border: solid 1px $lightblue;
+}
+.button a {
+        display: inline-block;
+        position: relative;
+        padding: rem(15);
+        font-family: $Gotu-font;
+    }

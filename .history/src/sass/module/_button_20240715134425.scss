@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.button {
+        display: inline-block;
+        position: relative;
+        padding: rem(16);
+        border: solid 5px #4682b4;
+        border: solid 5px #4682b4;
+        
+        .button::before {
+            position: absolute;
+            top: -25px;
+            bottom: -25px;
+        }
+    left: -25px;
+    right: -25px;
+    border: solid 5px #4682b4;
+    z-index: -1;
+}
