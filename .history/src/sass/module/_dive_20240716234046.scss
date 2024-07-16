@@ -6,19 +6,11 @@
 
 .dive__inner {
     padding: rem(14);
-    @include mq("md") {
-        max-width: rem(880);
-    }
 }
 
 .dive__img-container {
     margin-top: rem(24);
     padding-top: rem(26);
-    @include mq("md") {
-        padding-top: 0;
-        margin-top: rem(120);
-        max-width: rem(880);
-    }
 }
 
 .dive__img-main {
@@ -26,17 +18,11 @@
     height: rem(186);
     object-fit: cover;
     margin-left: auto;
-    @include mq("md") {
-        width: 81.4%;
-        height: rem(880);
-    }
 }
 
 .dive__img-main img {
     aspect-ratio: 281 / 186;
-    @include mq("md") {
-        aspect-ratio: 800 / 581;
-    }
+    z-index: 1;
 }
 
 .dive__img-sub {
@@ -44,17 +30,11 @@
     height: rem(194);
     object-fit: cover;
     margin-top: rem(-211);
-    @include mq("md") {
-        width: rem(400);
-        height: rem(606);
-    }
 }
 
 .dive__img-sub img {
     aspect-ratio: 128 / 194;
-    @include mq("md") {
-        aspect-ratio: 400 / 608;
-    }
+    z-index: -1;
 }
 
 .dive__text-container {
@@ -75,5 +55,5 @@
 
 .dive__button {
     text-align: center;
-    margin-top: rem(50);
+    margin-top: ;
 }

@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.text {
+    font-family: $base-font-family;
+    font-size: rem(16);
+    line-height: 1.5;
+}

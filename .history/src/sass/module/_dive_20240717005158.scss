@@ -27,7 +27,7 @@
     object-fit: cover;
     margin-left: auto;
     @include mq("md") {
-        width: 81.4%;
+        width: rem(581);
         height: rem(880);
     }
 }
