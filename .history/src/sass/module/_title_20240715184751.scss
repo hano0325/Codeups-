@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.title {
+    
+}
+
+.title-main {
+    font-size: rem(32);
+    line-height: 1.25;
+    text-decoration: capitalize;
+    @include mq("md") {
+        font-size: rem(40);
+        line-height: 1;
+    }
+}
+
+

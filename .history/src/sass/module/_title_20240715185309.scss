@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.title  span{
+    color: $lightblue;
+}
+
+.title-main {
+    font-size: rem(32);
+    line-height: 1.25;
+    text-transform:capitalize;
+    font-family: $Gotu-font;
+    font-weight: $regular;
+    @include mq("md") {
+        font-size: rem(40);
+        line-height: 1;
+    }
+}
+
+.title-sub {
+    font-size: rem(12);
+    lh
+    font-family: $base-font-family;
+}
+
