@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.tariff {
+    width: rem(280);
+    box-shadow: rem(0) rem(4) rem(4) rgba(0, 0, 0, .25);
+    @include mq("md") {
+        width: rem(333);
+    }
+}
+
+
+.tariff__img img {
+    width: rem(280);
+    height: rem(365);
+    @include mq("md") {
+        width: rem(333);
+        height: rem(445);
+        object-fit: cover;
+    }
+}
+
+.tariff__container {
+    padding: rem(20) rem(16);
+    @include mq("md") {
+        padding: rem(30) rem(16);
+    }
+}
+
+.tariff__textbox {
+    
+}
+
+.tariff__textbox-maintitle {
+    display: inline-block;
+    font-family: $base-font-family;
+    font-weight: $regular;
+    color: $lightblue;
+    padding: rem(4) rem(12);
+    font-size: rem(12);
+    line-height: 1.83333;
+    border: 1px solid $lightblue;
+
+    @include mq("md") {
+        padding: rem(6) rem(16);
+    }
+}
+
+.tariff__text-box-subtitle {
+    font-size: rem(16);
+    line-height: 1.5;
+}
