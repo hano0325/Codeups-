@@ -2,7 +2,6 @@
 
 .card {
     box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, .25);
-    width: rem(333);
 }
 
 .card__container {
@@ -42,7 +41,7 @@
 
 .card__text-block-text {
     font-weight: $regular;
-    width: rem(301);
+    
 }
 
 
