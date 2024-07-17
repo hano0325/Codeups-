@@ -12,13 +12,13 @@
 
 .dive__img-container {
     position: relative;
-    margin-top: rem(70);
+    margin-top: rem(50);
 
     @include mq("md") {
         z-index: 1;
-        padding: rem(10);
+        padding: rem(20);
         margin-top: rem(120);
-        max-width: rem(1200);
+        max-width: rem(1400);
     }
 }
 
@@ -42,8 +42,8 @@
 .dive__img-sub {
     position: absolute;
     width: 26%;
-    top: -16%;
-    width: 38.4%;
+    top: 5%;
+    left: 5%;
     object-fit: cover;
     @include mq("md") {
         left: 8%;
@@ -68,8 +68,8 @@
     @include mq("md") {
         display: flex;
         top: 12%;
-        left: 20%;
-        width: 80%;
+        left: 26%;
+        max-width: rem(840);
     }
 }
 
@@ -80,7 +80,7 @@
     line-height: 1;
     color: $lightblue;
     @include mq("md") {
-        max-width: rem(400);
+        m
         font-size: rem(80);
         margin-right: rem(40);
         padding-top: rem(10);
@@ -98,10 +98,10 @@
 }
 
 .dive__container-sub-subtext {
+    width: rem(400);
     font-weight: $regular;
     margin-top: rem(16);
     @include mq("md") {
-        width: rem(400);
         font-size: rem(16);
     }
 }
