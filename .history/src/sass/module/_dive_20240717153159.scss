@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.dive {
+    margin-top: rem(38);
+}
+
+.dive__inner {
+    padding: rem(14);
+    @include mq("md") {
+        max-width: rem(880);
+    }
+}
+
+.dive__img-container {
+    position: relative;
+    margin-top: rem(24);
+    @include mq("md") {
+        margin-top: rem(120);
+    }
+}
+
+.dive__img-main {
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+    @include mq("md") {
+        width: 81.4%;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+.dive__img-main img {
+    aspect-ratio: 281 / 186;
+    @include mq("md") {
+        aspect-ratio: 800 / 581;
+    }
+}
+
+.dive__img-sub {
+    object-fit: cover;
+    margin-top: rem(-211);
+    @include mq("md") {
+        width: 37%;
+        margin-top: rem(-211);
+    }
+}
+
+.dive__img-sub img {
+    aspect-ratio: 128 / 194;
+    @include mq("md") {
+        aspect-ratio: 400 / 608;
+    }
+}
+
+.dive__text-container {
+    margin-top: rem(50);
+}
+
+.dive__text-container-title {
+    font-family: $Gotu-font;
+    font-weight: $regular;
+    font-size: rem(40);
+    line-height: 1;
+    color: $lightblue;
+}
+
+.dive__text-container-subtext {
+    margin-top: rem(16);
+}
+
+.dive__button {
+    text-align: center;
+    margin-top: rem(50);
+}
