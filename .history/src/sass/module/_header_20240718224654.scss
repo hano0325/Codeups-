@@ -1,0 +1,104 @@
+@use "global" as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: rem(90);
+    background-color: rgba(13, 41, 54, 0.68);
+    width: 100%;
+}
+
+.header__inner {
+    max-width: rem(1420);
+    padding-left: rem(15);
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    @include mq("md") {
+        padding-left: rem(20);
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo img{
+    max-width: rem(100);
+    @include mq("md") {
+        max-width: rem(133);
+    }
+}
+
+.header__logo a {
+    padding: rem(20);
+    @include mq("md") {
+        padding: rem(20);
+    }
+}
+
+.header__nav.header__nav-items {
+    display: none;
+    @include mq("md") {
+        display: flex;
+        height: inherit;
+    }
+}
+
+.header__nav-item {
+    height: inherit;
+}
+
+.header__nav-link {
+    position: relative;
+    display: flex;
+    color: $white;
+    font-family: $base-font-family;
+    font-weight: $regular;
+    line-height: 1;
+    font-size: rem(10);
+    padding: rem(27) rem(20);
+    white-space: nowrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header__nav-link:hover {
+    color: $white;
+}
+
+.header__nav-link--large {
+    text-transform:uppercase;
+}
+
+.header__nav-link span{
+    margin-bottom: rem(4);
+    text-align: center;
+    text-transform:capitalize;
+    font-size: rem(18);
+    line-height: 1;
+    font-family: $Gotu-font;
+}
+
+.header__nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background:$white;
+    transition: all .3s;
+    transform: scale(1, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}

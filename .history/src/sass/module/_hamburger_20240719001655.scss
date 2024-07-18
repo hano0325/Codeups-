@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.hamburger {
+    position: relati;
+    
+    z-index: 9999;
+}
+
+.hamburger span {
+    position: absolute;
+    background-color: $white;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
