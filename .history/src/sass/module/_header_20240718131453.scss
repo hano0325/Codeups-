@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.header {
+    position: fixed;
+    height: rem(90);
+    background-color: rgba($color: , $alpha: 1.0);
+}

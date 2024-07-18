@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.header {
+    position: fixed;
+    height: rem(90);
+    background-color: rgba(13, 41, 54, 0.68);
+    width: 100%;
+}
+
+.header__inner {
+    max-width: rem(1400);
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.header__nav.header__nav-items {
+    display: flex;
+    height: inherit;
+}
+
+.header__nav-item {
+    height: inherit;
+}
+
+.header__nav-item a {
+    display: flex;
+    text-transform:capitalize;
+    font-family: $Gotu-font;
+    font-size: rem(18);
+    padding: 0 rem(20);
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    color: $white;
+}
+
+.header__nav-item--large {
+    text-transform:capitalize;
+}
+
+.header__nav-item-camp::after {
+    content: "";
+}
+
+
