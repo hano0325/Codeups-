@@ -1,0 +1,9 @@
+@use "global" as *;
+
+
+
+.drawer {
+    position: fixed;
+    background-color: $lightblue;
+    z-index: 1000;
+}

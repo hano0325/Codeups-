@@ -3,7 +3,7 @@
 @if $startFrom == sp {
   .inner {
     width: 100%;
-    min-width: rem(600);
+    min-width: rem();
     padding-right: $padding-sp;
     padding-left: $padding-sp;
     margin-right: auto;
