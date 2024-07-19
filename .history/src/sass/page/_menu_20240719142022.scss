@@ -1,0 +1,23 @@
+@use "global" as *;
+
+
+.menu__nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: rem(16);
+    line-height: 1.125;
+    color: $white;
+    font-family: $base-font-family;
+}
+
+.menu__nav-item {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+}
+
+.menu__nav-item-main {
+    font-weight: $bold;
+    gap: 24px;
+}

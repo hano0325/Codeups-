@@ -1,0 +1,49 @@
+@use "global" as *;
+
+
+.menu__nav-items {
+    display: flex;
+    flex-direction: column;
+    font-size: rem(16);
+    line-height: 1.125;
+    color: $white;
+    font-family: $base-font-family;
+}
+
+.menu__nav-container-first,
+.menu__nav-container-second {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu__nav-container-first{
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+.menu__nav-container-second{
+    flex-grow: 1;
+}
+
+.menu__nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: rem(40);
+    gap: rem(24);
+}
+
+.menu__nav-item-main {
+    position: relative;
+    margin-left: rem(4);
+    font-weight: $bold;
+}
+
+.menu__nav-item-main a::before {
+    position: absolute;
+    content: url(../images/common/hitode.svg);
+    padding-right: rem(4);
+    top: -25%;
+    left: -3%;
+}

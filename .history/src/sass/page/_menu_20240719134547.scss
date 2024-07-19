@@ -1,0 +1,16 @@
+@use "global" as *;
+
+
+.menu__nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: rem(16);
+    line-height: ;
+    color: $white;
+    font-family: $base-font-family;
+}
+
+.menu__nav-item-main {
+
+}

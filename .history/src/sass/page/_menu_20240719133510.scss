@@ -1,0 +1,11 @@
+@use "global" as *;
+
+
+
+.menu__nav-i {
+    display: flex;
+    margin-top: rem(24);
+    flex-direction: column;
+    justify-content: center;
+}
+

@@ -1,0 +1,10 @@
+@use "global" as *;
+
+
+
+.menu__nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
