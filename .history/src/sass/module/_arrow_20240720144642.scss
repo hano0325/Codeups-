@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.arrow{
+    width: rem(28);
+    height: rem(6);
+    border-left: 1px solid $lightblue; /* 矢印の色を設定 */
+    border-bottom: 1px solid $lightblue;
+    transform: rotate(45deg); /* 矢印を45度回転させる */
+}
+
+.arrow-mirror {
+    border-right: 1px solid $lightblue;
+}

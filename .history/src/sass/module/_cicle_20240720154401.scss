@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.cycle__button {
+    position: relative;
+    width: rem(48);
+    height: rem(48);
+    border: 1px solid $lightblue;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.cycle__button a::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: url(../images/common/Vector-.svg);
+    width: rem(28);
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}

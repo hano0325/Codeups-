@@ -1,0 +1,21 @@
+@use "global" as *;
+
+// .contact {
+
+// }
+
+// .contact__inner {
+
+// }
+
+.contact__title-main {
+   width: rem(440);
+   text-align: center;
+   border-bottom: 1px solid $lightblue;
+}
+
+
+.contact__title-main img {
+    display: block;
+    max-width: rem(174);
+}

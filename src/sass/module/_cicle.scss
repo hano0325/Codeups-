@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.cycle__button {
+    position: relative;
+    width: rem(48);
+    height: rem(48);
+    border: 1px solid $lightblue;
+    border-radius: 50%;
+    z-index: 1000;
+    @include mq("md") {
+        width: rem(80);
+        height: rem(80);
+    }
+}
+
+.cycle__button a::after {
+    position: absolute;
+    top: 6%;
+    left: 35%;
+    content: url(../images/common/Vector-mini.svg);
+    margin: auto;
+    text-align: center;
+    @include mq("md") {
+        top: 30%;
+        left: 15%;
+        content: url(../images/common/Vector-green.svg);
+        transform: rotate(-90deg);
+    }
+}
