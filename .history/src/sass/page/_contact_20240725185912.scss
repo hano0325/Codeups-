@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.contact {
+
+}
+
+// .contact__inner {
+
+// }
+
+.contact__container-main {
+    width: rem(295);
+    text-align: center;
+}
+
+
+.contact__address-item,
+.contact__img img,
+.contact__title-main--large.title-main,
+.contact__title-sub.title-sub,
+.contact__form-text {
+    text-shadow: rem(0) rem(4) rem(4) rgba(0, 0, 0, .25);
+}
+
+.contact__form-button,
+.contact__title-img::after,
+.contact__img-concept  {
+    box-shadow: rem(0) rem(4) rem(4) rgba(0, 0, 0, .25);
+}
+
+.contact__form-button {
+    display: inline-block;
+}
+
+
+.contact__container {
+    display: inline-block;
+    text-align: center;
+}
+
+.contact__title-main--large.title-main {
+    text-align: center;
+}
+
+.contact__title-img{
+    position: relative;
+}
+
+.contact__title-img::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: rem(295);
+    height: rem(1);
+    background-color: $lightblue;
+}
+
+
+
+.contact__title-img img{
+    display: inline-block;
+    max-width: rem(174);
+    filter:drop-shadow( rem(0) rem(4) rem(4) rgba(0, 0, 0, .25));
+}
+
+.contact__address {
+    font-family: $base-font-family;
+    font-size: rem(16);
+    line-height: 1.5;
+    font-weight: $regular;
+    color: $blue;
+    margin-top: rem(16);
+}
+
+.contact__img-concept {
+    display: inline-block;
+    margin-top: rem(16);
+    width: rem(273);
+    height: rem(160);
+    object-fit: cover;
+}
+
+.contact__title-main--large.title-main{
+    font-size: rem(80);
+    line-height: 1;
+}
+
+.contact__container-sub {
+    width: rem(315);
+}

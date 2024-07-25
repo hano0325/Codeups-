@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.contact {
+
+}
+
+// .contact__inner {
+
+// }
+
+.contact__container {
+    display: inline-block;
+    text-align: center;
+}
+
+.contact__title-main {
+   text-align: center;
+   border-bottom: 1px solid $lightblue;
+}
+
+
+.contact__title-main img {
+    display: inline-block;
+    max-width: rem(174);
+}
+
+.contact__address {
+    font-family: $base-font-family;
+    font-size: rem(16);
+    line-height: 1.5;
+    font-weight: $regular;
+}
