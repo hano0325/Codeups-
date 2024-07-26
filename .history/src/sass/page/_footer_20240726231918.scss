@@ -1,0 +1,21 @@
+@use "global" as *;
+
+
+.footer {
+    background-color: $lightblue;
+    padding-top: rem(50);
+    padding-bottom: rem(55);
+}
+
+.footer__menu-sns-button-items {
+    display: flex;
+}
+
+.footer__sns-button-item {
+    width: rem(24);
+    height: rem(24);
+}
+
+.footer__sns-button-item:not(:first-child) {
+    margin-left: rem(16);
+}
