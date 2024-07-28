@@ -1,0 +1,84 @@
+.mv {
+    width: 100%;
+    height: 100vh;
+    min-height: rem(400);
+  }
+
+  .mv__contact {
+    background-image: url(/images/FV-contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 534px;
+    width: 100%;
+    min-height: 400px;
+  
+    @include mq("md") {
+      background-image: url(/images/FV-contact-sp.jpg);
+      height: 445px;
+    }
+  }
+  
+  .mv__inner {
+    position: relative;
+    height: inherit;
+  }
+  
+  .mv__contact-inner {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    min-height: 400px;
+  }
+  
+  .mv__slider,
+  .swiper-slide picture,
+  .swiper-slide img {
+    min-height: 400px;
+    height: inherit;
+  }
+  
+  .swiper-slide img {
+    min-height: 400px;
+    object-fit: cover;
+  }
+  
+  .mv__title-wrap {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 52%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+  
+    @include mq("md") {
+      top: 50%;
+      left: 55%;
+    }
+  }
+  
+  .mv__title-contact-main,
+  .mv__title-contact-sub {
+    position: absolute;
+    z-index: 10;
+    top: 53%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  
+    @include mq("md") {
+      top: 50%;
+      left: 22%;
+    }
+  }
+  
+  .mv__title-main {
+    font-size: 38px;
+    line-height: 1.526;
+    letter-spacing: 0.05em;
+  
+    @include mq("md") {
+      font-size: 28px;
+      line-height: 1.428;
+      letter-spacing: 0%;
+    }
+}
