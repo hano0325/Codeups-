@@ -1,0 +1,88 @@
+@use "global" as *;
+
+// .menu {
+
+// }
+
+.menu__nav-inner {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: rem(15);
+    padding-left: rem(15);
+    @include mq("md") {
+        padding-right: rem(25);
+        padding-left: rem(25);
+    }
+}
+
+.menu__logo {
+    display: inline-block;
+}
+
+.menu__logo img{
+    max-width: rem(102);
+    text-align: left;
+    filter: none;
+    @include mq("md") {
+        max-width: rem(200);
+    }
+}
+
+.menu__nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-size: rem(16);
+    line-height: 1;
+    color: $white;
+    font-family: $base-font-family;
+    @include mq("md") {
+        width: ;
+        flex-basis: 200px;
+        line-height: 1.125;
+    }
+}
+
+.menu__nav-container-first,
+.menu__nav-container-second {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(10);
+    flex-direction: column;
+    flex-grow: 1;
+    @include mq("md") {
+        max-width: rem(436);
+        flex-direction: row;
+    }
+}
+
+.menu__nav-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(35);
+    gap: rem(24);
+}
+
+.menu__nav-container-first:not(:first-child)
+.menu__nav-container-second:not(:first-child) {
+    margin-top: 0;
+
+}
+
+.menu__nav-item-main {
+    position: relative;
+    margin-left: rem(15);
+    font-weight: $bold;
+}
+
+
+.menu__nav-item-main::before {
+    position: absolute;
+    content: url(../images/common/hitode.svg);
+    left: -15%;
+}
+
+.menu__nav-item-sub a{
+    padding-left: 1em;
+}
