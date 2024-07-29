@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.swiper-slide picture,
+.swiper-slide img {
+  min-height: rem(400);
+  height: inherit;
+  object-fit: cover;
+}
+
+.swiper-slide img {
+  }

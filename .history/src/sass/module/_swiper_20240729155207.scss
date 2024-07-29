@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.swiper-slide picture,
+.swiper-slide img {
+  height: 100vh;
+  object-fit: cover;
+}
