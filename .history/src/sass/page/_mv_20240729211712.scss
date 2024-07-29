@@ -53,7 +53,7 @@
     text-transform: uppercase;
 
     @include mq("md") {
-      width: 100%;
+      width: 100px;
       font-size: rem(80);
       line-height: 1.3;
     }
