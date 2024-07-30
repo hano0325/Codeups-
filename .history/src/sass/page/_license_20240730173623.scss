@@ -1,0 +1,60 @@
+@use "global" as *;
+
+// .license {
+
+// }
+
+.license__container {
+    @include mq("md") {
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+.license__img {
+    width: 100%;
+    @include mq("md") {
+        width: rem(540);
+    }
+}
+
+.license__img img{
+    width: 100%;
+    aspect-ratio: ;
+    width: rem(345);
+    height: rem(227);
+    object-fit: cover;
+    @include mq("md") {
+        width: rem(540);
+        height: rem(356);
+    }
+}
+
+.license__text-container {
+    display: block;
+    margin-top: rem(24);
+    width: rem(345);
+    @include mq("md") {
+        width: rem(492);
+        margin-top: 0;
+        margin-left: rem(48);
+    }
+}
+
+.license__title {
+    color: $blue;
+    font-weight: $bold;
+    border-bottom: 1px solid $lightblue;
+}
+
+.license__text {
+    color: $black;
+    margin-top: rem(8);
+}
+
+.license__button {
+    margin-top: rem(40);
+    text-align: center;
+}
+

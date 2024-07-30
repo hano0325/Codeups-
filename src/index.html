@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
@@ -204,92 +204,78 @@
       <div class="cycle__button">
         <a href="#"></a>
       </div> -->
-
       <section class="campaign">
-        <div class="capain__inner inner">
+        <div class="campaign__inner inner">
           <div class="campaign__title title">
             <h2 class="campaign__title-main title-main"><span>C</span>ampaign</h2>
             <p class="campaign__title-sub title-sub"><span>キャンペーン</span></p>
-            <div class="swiper-button-next campaign-button-next cycle__button"></div>
-            <div class="swiper-button-prev campaign-button-prev cycle__button"></div>
-           </div>
-             <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide campaign-slide campaign__content tariff__content">
-                  <div class="campaign__content-img tariff__content-img">
-                    <img src="./assets/images/common/campaign1.jpg" alt="海の中に複数の魚がいる写真">
-                  </div>
-                  <div class="campaign__container tariff__container text__container">
-                    <div class="campaign__text-box text-box">
-                      <p class="campaign__text-box-maintitle text-box-maintitle">ライセンス講習</p>
-                      <p class="campaign__text-box-subtitle text-box-subtitle">ライセンス講習</p>
-                    </div>
-                    <div class="campaign__tariff__money tariff__money">
-                      <p class="campaign__money-title tariff__money-title">全部コミコミ(お一人様)</p>
-                      <div class="campaign__money-price-container tariff__money-price-container">
-                        <p class="campaign__money-price-discount tariff__money-price-discount">¥56,000</p>
-                        <p class="campaign__money-price-main tariff__money-price-main">¥46,000</p>
-                      </div>
-                    </div>
+            <div class="swiper-button-next campaign-button-next"></div>
+            <div class="swiper-button-prev campaign-button-prev"></div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- スライド1 -->
+              <div class="swiper-slide campaign-slide campaign__content tariff__content">
+                <div class="campaign__content-img tariff__content-img">
+                  <img src="./assets/images/common/campaign1.jpg" alt="海の中に複数の魚がいる写真">
                 </div>
-                <div class="swiper-slide campaign-slide campaign__content tariff__content">
-                  <div class="campaign__content-img tariff__content-img">
-                    <img src="./assets/images/common/campaign1.jpg" alt="海の中に複数の魚がいる写真">
+                <div class="campaign__container tariff__container text__container">
+                  <div class="campaign__text-box text-box">
+                    <p class="campaign__text-box-maintitle text-box-maintitle">ライセンス講習</p>
+                    <p class="campaign__text-box-subtitle text-box-subtitle">ライセンス講習</p>
                   </div>
-                  <div class="campaign__container tariff__container text__container">
-                    <div class="campaign__text-box text-box">
-                      <p class="campaign__text-box-maintitle text-box-maintitle">ライセンス講習</p>
-                      <p class="campaign__text-box-subtitle text-box-subtitle">ライセンス講習</p>
-                    </div>
-                    <div class="campaign__tariff__money tariff__money">
-                      <p class="campaign__money-title tariff__money-title">全部コミコミ(お一人様)</p>
-                      <div class="campaign__money-price-container tariff__money-price-container">
-                        <p class="campaign__money-price-discount tariff__money-price-discount">¥56,000</p>
-                        <p class="campaign__money-price-main tariff__money-price-main">¥46,000</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="swiper-slide campaign-slide campaign__content tariff__content">
-                  <div class="campaign__content-img tariff__content-img">
-                    <img src="./assets/images/common/campaign1.jpg" alt="海の中に複数の魚がいる写真">
-                  </div>
-                  <div class="campaign__container tariff__container text__container">
-                    <div class="campaign__text-box text-box">
-                      <p class="campaign__text-box-maintitle text-box-maintitle">ライセンス講習</p>
-                      <p class="campaign__text-box-subtitle text-box-subtitle">ライセンス講習</p>
-                    </div>
-                    <div class="campaign__tariff__money tariff__money">
-                      <p class="campaign__money-title tariff__money-title">全部コミコミ(お一人様)</p>
-                      <div class="campaign__money-price-container tariff__money-price-container">
-                        <p class="campaign__money-price-discount tariff__money-price-discount">¥56,000</p>
-                        <p class="campaign__money-price-main tariff__money-price-main">¥46,000</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="swiper-slide campaign-slide campaign__content tariff__content">
-                  <div class="campaign__content-img tariff__content-img">
-                    <img src="./assets/images/common/campaign1.jpg" alt="海の中に複数の魚がいる写真">
-                  </div>
-                  <div class="campaign__container tariff__container text__container">
-                    <div class="campaign__text-box text-box">
-                      <p class="campaign__text-box-maintitle text-box-maintitle">ライセンス講習</p>
-                      <p class="campaign__text-box-subtitle text-box-subtitle">ライセンス講習</p>
-                    </div>
-                    <div class="campaign__tariff__money tariff__money">
-                      <p class="campaign__money-title tariff__money-title">全部コミコミ(お一人様)</p>
-                      <div class="campaign__money-price-container tariff__money-price-container">
-                        <p class="campaign__money-price-discount tariff__money-price-discount">¥56,000</p>
-                        <p class="campaign__money-price-main tariff__money-price-main">¥46,000</p>
-                      </div>
+                  <div class="campaign__tariff__money tariff__money">
+                    <p class="campaign__money-title tariff__money-title">全部コミコミ(お一人様)</p>
+                    <div class="campaign__money-price-container tariff__money-price-container">
+                      <p class="campaign__money-price-discount tariff__money-price-discount">¥56,000</p>
+                      <p class="campaign__money-price-main tariff__money-price-main">¥46,000</p>
                     </div>
                   </div>
                 </div>
               </div>
-             </div>
+              <!-- スライド2 -->
+              <div class=" tariff__content campaign__content swiper-slide campaign-slide">
+                <div class="campaign__content-img tariff__content-img">
+                  <img src="./assets/images/common/campaign1.jpg" alt="海の中に複数の魚がいる写真">
+                </div>
+                <div class="campaign__container tariff__container text__container">
+                  <div class="campaign__text-box text-box">
+                    <p class="campaign__text-box-maintitle text-box-maintitle">ライセンス講習</p>
+                    <p class="campaign__text-box-subtitle text-box-subtitle">ライセンス講習</p>
+                  </div>
+                  <div class="campaign__tariff__money tariff__money">
+                    <p class="campaign__money-title tariff__money-title">全部コミコミ(お一人様)</p>
+                    <div class="campaign__money-price-container tariff__money-price-container">
+                      <p class="campaign__money-price-discount tariff__money-price-discount">¥56,000</p>
+                      <p class="campaign__money-price-main tariff__money-price-main">¥46,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- スライド3 -->
+              <div class="swiper-slide campaign-slide campaign__content tariff__content">
+                <div class="campaign__content-img tariff__content-img">
+                  <img src="./assets/images/common/campaign1.jpg" alt="海の中に複数の魚がいる写真">
+                </div>
+                <div class="campaign__container tariff__container text__container">
+                  <div class="campaign__text-box text-box">
+                    <p class="campaign__text-box-maintitle text-box-maintitle">ライセンス講習</p>
+                    <p class="campaign__text-box-subtitle text-box-subtitle">ライセンス講習</p>
+                  </div>
+                  <div class="campaign__tariff__money tariff__money">
+                    <p class="campaign__money-title tariff__money-title">全部コミコミ(お一人様)</p>
+                    <div class="campaign__money-price-container tariff__money-price-container">
+                      <p class="campaign__money-price-discount tariff__money-price-discount">¥56,000</p>
+                      <p class="campaign__money-price-main tariff__money-price-main">¥46,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
+      
     <div class="title">
       <h2 class="title-main"><span>C</span>ampaign</h2>
       <p class="title-sub"><span>キャンペーン</span></p>
@@ -318,12 +304,13 @@
           <p class="tariff__text-box-maintitle text-box-maintitile">ライセンス講習</p>
           <p class="tariff__text-box-subtitle text-box-subtitle">ライセンス講習</p>
         </div>
-        <div class="tariff__money">
-          <p class="tariff__money-title">全部コミコミ(お一人様)</p>
-          <div class="tariff__money-price-container">
-            <p class="tariff__money-price-discount">¥56,000</p>
-            <p class="tariff__money-price-main">¥46,000</p>
+        <div class="tariff__money money">
+          <p class="tariff__money-title money__title title">全部コミコミ(お一人様)</p>
+          <div class="tariff__price price">
+            <p class="price__discount">¥56,000</p>
+            <p class="price__main">¥46,000</p>
           </div>
+            </div>
         </div>
       </div>
     </div>
@@ -334,7 +321,7 @@
       <h2 class="dive__title-main title-main"><span>C</span>ampaign</h2>
       <p class="dive__title-sub title-sub"><span>キャンペーン</span></p>
     </div>
-    <div class="dive__img-container">
+    <div class="dive__img-container dive">
       <div class="dive__img-main">
         <img src="./assets/images/common/ocean2.jpg" alt="海の中に黄色い魚が二匹いる写真">
       </div>
@@ -369,7 +356,7 @@
           <p class="voice__text-box-maintitle text-box-maintitle">ライセンス講習</p>
           <p class="voice__text-box-subtitle text-box-subtitle">ここにタイトルが入ります。ここにタイトル</p>
         </div>
-        <div class="voice__card-content js-slide">
+        <div class="voice__card-content colorbox">
           <div class="color"></div>
           <img src="./assets/images/common/voice.jpg" alt="麦わら帽子を被った女性の写真">
         </div>
@@ -383,7 +370,8 @@
   <div class="license">
     <div class="license__inner inner">
       <div class="license__container">
-        <div class="license__img js-slide">
+        <div class="license__img colorbox">
+          <div class="color"></div>
           <img src="./assets/images/common/license.jpg" alt="海の中に黄色の魚と稚魚がいる写真">
         </div>
         <div class="license__text-container">
@@ -402,7 +390,7 @@
       </div>
     </div>
   </div>
-
+  
 
 
 

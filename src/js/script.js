@@ -37,51 +37,58 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // mvセクション用のSwiper
+    const mvSwiper = new Swiper(".mv__slider.swiper", {
+      loop: true,
+      effect: "fade",
+      speed: 3000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 3000,
+      },
+    });
+
+    // キャンペーンセクション用のSwiper
+    var campaignSwiper = new Swiper('.swiper-container', {
+      loop: true, // 無限ループ
+      autoplay: {
+        delay: 2000,
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.campaign-button-next',
+          prevEl: '.campaign-button-prev',
+      },
+    });
+  });
+
+
 //要素の取得とスピードの設定
-var box = $('.js-slide'),
-    speed = 700;  
- 
+var box = $('.colorbox'),
+    speed = 700;
+
 //.colorboxの付いた全ての要素に対して下記の処理を行う
 box.each(function(){
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),
     image = $(this).find('img');
     var counter = 0;
- 
+
     image.css('opacity','0');
     color.css('width','0%');
     //inviewを使って背景色が画面に現れたら処理をする
     color.on('inview', function(){
         if(counter == 0){
-　　　　　$(this).delay(200).animate({'width':'100%'},speed,function(){
+          $(this).delay(200).animate({'width':'100%'},speed,function(){
                    image.css('opacity','1');
-                   $(this).css({'left':'0' , 'right':'auto'});
+                   $(this).css({'left':'auto' , 'right':'0'});
                    $(this).animate({'width':'0%'},speed);
                 })
             counter = 1;
           }
      });
 });
-
-var swiper = new Swiper('.swiper-container', {
-  loop: true, // 無限ループ
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-});
-
-
-  const swiper = new Swiper(".swiper", {
-    loop: true,
-    effect: "fade",
-    speed: 3000,
-    allowTouchMove: false,
-    autoplay: {
-      delay: 3000,
-    },
-  });
