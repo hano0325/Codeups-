@@ -7,15 +7,17 @@
 .contact__inner.inner {
     padding-right: rem(30);
     padding-left: rem(30);
+    justify-content: center;
     @include mq("md") {
-        display: flex;
-        justify-content: center;
         max-width: rem(1080);
-        gap: rem(82);
         box-shadow: rem(4) rem(4) rem(10) rgba(0, 0, 0, .25);
         padding-right: rem(25);
         padding-left: rem(25);
     }
+}
+
+.contact__container {
+    display: flex;
 }
 
 .contact__container-main {
@@ -67,11 +69,11 @@
 }
 
 
-.contact__container {
-    width: 50%;
-    display: inline-block;
-    text-align: center;
-}
+// .contact__container {
+//     width: 50%;
+//     display: inline-block;
+//     text-align: center;
+// }
 
 .contact__title-main--large.title-main {
     text-align: center;
@@ -160,7 +162,7 @@
     @include mq("md") {
         width: rem(315);
         margin-top: 0;
-        margin-left: rem(80);
+        margin-left: rem(160);
         padding:rem(100) 0;
     }
 }

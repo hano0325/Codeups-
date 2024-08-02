@@ -49,23 +49,38 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       },
     });
 
-    // キャンペーンセクション用のSwiper
-    var campaignSwiper = new Swiper('.swiper-container', {
-      loop: true, // 無限ループ
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.campaign-button-next',
-          prevEl: '.campaign-button-prev',
-      },
-    });
-  });
-
+// キャンペーンセクション用のSwiper
+var campaignSwiper = new Swiper('.swiper-container', {
+  loop: true, // 無限ループ
+  autoplay: {
+    delay: 2000, // 2秒ごとに自動でスライド
+    disableOnInteraction: false // ユーザーが操作しても自動再生を止めない
+  },
+  pagination: {
+    el: '.swiper-pagination', // ページネーションの要素
+    clickable: true, // ページネーションをクリック可能にする
+  },
+  navigation: {
+    nextEl: '.swiper-button-next', // 次へボタン
+    prevEl: '.swiper-button-prev', // 前へボタン
+  },
+  breakpoints: {
+    // スマートフォン用（375px以上）
+    375: {
+      slidesPerView: 1.5, // 一度に表示するスライド数
+      slidesPerGroup: 1, // 一度に移動するスライド数
+      initialSlide: 1, // 初期表示スライド
+      spaceBetween: 24, // スライド間のスペース
+    },
+    // タブレットおよびPC用（768px以上）
+    768: {
+      slidesPerView: 4.5, // 一度に表示するスライド数
+      slidesPerGroup: 1, // 一度に移動するスライド数
+      initialSlide: 1, // 初期表示スライド
+      spaceBetween: 40, // スライド間のスペース
+    }
+  }
+});
 
 //要素の取得とスピードの設定
 var box = $('.colorbox'),
@@ -90,5 +105,6 @@ box.each(function(){
                 })
             counter = 1;
           }
-     });
-});
+      });
+    });
+  });
