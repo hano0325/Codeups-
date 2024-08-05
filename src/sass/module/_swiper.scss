@@ -35,8 +35,8 @@
   margin: auto;
   text-align: center;
   @include mq("md") {
-      top: 30%;
-      left: 15%;
+      left: 0;
+      top: 21%;
       content: url(../images/common/Vector-green.svg);
       transform: rotate(-90deg);
   }

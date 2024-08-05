@@ -1,0 +1,34 @@
+@use "global" as *;
+
+// .blog {
+//     padding-bottom: rem(40);
+// }
+
+.blog__bg {
+    @include mq("md") {
+        position: relative;
+        z-index: 1;
+        padding-top: rem(100);
+        background-image:url(../images/common/blog-bg.jpg); /*背景画像を指定*/
+        background-repeat: no-repeat; /*背景画像の繰り返しを解除*/
+        background-position: top center; /*背景画像の表示位置指定*/
+        background-size: 100% 500px;
+    }
+}
+
+
+.blog__inner.inner {
+    padding-right: rem(15);
+    padding-left: rem(15);
+    margin-right: auto;
+    margin-left: auto;
+    @include mq("md") {
+        padding-right: rem(25);
+        padding-left: rem(25);
+    }
+}
+
+.blog__container {
+    margin-top: rem(80);
+    padding-bottom: rem(40);
+}

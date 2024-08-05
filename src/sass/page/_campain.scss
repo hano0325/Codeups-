@@ -4,10 +4,49 @@
     position: relative;
     padding-top: rem(40);
     padding-bottom: rem(40);
+    @include mq("md") {
+        padding-top: rem(120);
+        padding-bottom: rem(60);
+    }
 }
 
-.campaign-container {
+.campaign__inner {
+    position: relative;
     overflow: hidden;
+    padding-left: rem(16);
+    padding-right: rem(16);
+    @include mq("md") {
+        padding-left: rem(180);
+        padding-right: 0;
+    }
+}
+
+.campaign__title {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 27%;
+    @include mq("md") {
+        left: 36%;
+
+    }
+}
+
+.campaign__container.swiper-container {
+    margin-top: rem(31);
+    @include mq("md") {
+        margin-top: rem(45);
+    }
+}
+
+.campaign__container-text {
+    padding: rem(16);
+    @include mq("md") {
+        padding-top: rem(24);
+        padding-right: rem(16);
+        padding-left: rem(16);
+        padding-bottom: rem(40);
+    }
 }
 
 .campaign-slide {
@@ -19,26 +58,68 @@
 
 .campaign-slide.swiper-slide img {
     min-height: auto;
+    height: auto;
     width: 100%;
-    aspect-ratio: 353 / 188;
+    aspect-ratio: 296 / 188;
     object-fit: cover;
     @include mq("md") {
-      aspect-ratio: 333 / 223;
+        aspect-ratio: 333 / 223;
     }
   }
 
-.campaign-slide img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    min-height: none;
+.campaign__button-container {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    width: 50%;
+}
+
+.campaign-button-next,
+.campaign-button-prev {
+    display: none;
     @include mq("md") {
-        width: rem(333);
+        display: flex;
+        position: absolute;
     }
+}
+
+.campaign-button-next {
+    @include mq("md") {
+        position: absolute;
+        left: 72%;
+        transform: rotate(90deg);
+    }
+}
+
+.campaign-button-prev {
+    @include mq("md") {
+        left: 50%;
+        transform:scale(-1,1) rotate(90deg);
+    }
+}
+
+.campaign__text-box {
+    padding-bottom: rem(8);
+}
+
+.campaign__money {
+    margin-top: rem(8);
+}
+
+.campaign__text-box-subtitle {
+    margin-top: rem(4);
 }
 
 
 
 .campaign__button  {
-    margin-top: rem(80);
+    margin-top: rem(60);
+    text-align: center;
+    @include mq("md") {
+        display: inline-block;
+        margin-top: rem(95);
+        text-align: center;
+        width: 85%;
+    }
 }
+

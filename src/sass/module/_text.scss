@@ -9,7 +9,8 @@
 }
 
 .text__container {
-    padding: rem(16);
+    padding-right: rem(16);
+    padding-left: rem(16);
     @include mq("md") {
         padding: rem(24);
     }
@@ -40,8 +41,4 @@
     color: $blue;
     font-size: rem(16);
     line-height: 1.5;
-    @include mq("md") {
-        font-size: rem(24);
-        line-height: 1.458333;
-    }
 }

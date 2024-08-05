@@ -65,16 +65,17 @@ var campaignSwiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev', // 前へボタン
   },
   breakpoints: {
-    // スマートフォン用（375px以上）
-    375: {
-      slidesPerView: 1.5, // 一度に表示するスライド数
+    // スマートフォン用（320px以上）
+    320: {
+      slidesPerView: 1.22, // 一度に表示するスライド数
       slidesPerGroup: 1, // 一度に移動するスライド数
       initialSlide: 1, // 初期表示スライド
       spaceBetween: 24, // スライド間のスペース
     },
-    // タブレットおよびPC用（768px以上）
-    768: {
-      slidesPerView: 4.5, // 一度に表示するスライド数
+
+    // タブレットおよびPC用（1440px以上）
+    1440: {
+      slidesPerView: 3.5, // 一度に表示するスライド数
       slidesPerGroup: 1, // 一度に移動するスライド数
       initialSlide: 1, // 初期表示スライド
       spaceBetween: 40, // スライド間のスペース

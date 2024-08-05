@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.about {
+    padding-top: rem(40);
+    padding-bottom: rem(88);
+    @include mq("md") {
+        padding-top: rem(80);
+        padding-bottom: rem(136);
+    }
+}
+
+.about__container-subbutton {
+    text-align: center;
+    margin-top: rem(40);
+}

@@ -15,15 +15,17 @@
     padding-top: rem(11);
     font-family: $lato-font;
     font-weight: $bold;
+    line-height: 1;
     @include mq("md") {
         padding-top: rem(16);
-        font-size: rem(24);
+        font-size: rem(20);
         margin-right: rem(25);
     }
 }
 
 .price__main {
     font-size: rem(32);
+    line-height: 1;
     font-family: $lato-font;
     font-weight: $bold;
     color: $lightblue;
