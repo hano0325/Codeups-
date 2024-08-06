@@ -1,17 +1,22 @@
 @use "global" as *;
 
 .card {
+    background-color: $white;
     box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, .25);
     width: rem(333);
 }
 
 .card__container {
     width: 100%;
-    padding: rem(16);
+    padding-top: rem(16);
+    padding-right: rem(16);
+    padding-left: rem(16);
+    padding-bottom: rem(24);
 }
 
 .card__content {
     width: 100%;
+    height: auto;
 }
 
 .card__content img {
@@ -20,6 +25,12 @@
     height: auto;
     object-fit: cover;
 }
+
+.card__block {
+    padding-top: rem(18);
+}
+
+
 
 .card__block-text {
     margin-top: rem(24);
@@ -39,16 +50,16 @@
     font-family: $base-font-family;
     font-size: rem(16);
     line-height: 1.5;
+    color: $blue;
 }
 
 .card__block-title {
     border-bottom: 1px solid $lightblue;
     font-weight: $medium;
-    color: $blue;
 }
 
 
 .card__block-subtext {
+    padding-top: rem(16);
     font-weight: $regular;
-    color: $black;
 }

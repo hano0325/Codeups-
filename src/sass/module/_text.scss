@@ -22,10 +22,11 @@
 }
 
 .text-box-maintitle {
-    display: inline-block;
+    display: inline-flex;
     font-weight: $regular;
     font-family: $base-font-family;
     color: $lightblue;
+    min-width: rem(120);
     padding: rem(4) rem(12);
     font-size: rem(12);
     line-height: 1.83333;
@@ -41,4 +42,7 @@
     color: $blue;
     font-size: rem(16);
     line-height: 1.5;
+    @include mq("md") {
+        font-size: rem(24);
+    }
 }

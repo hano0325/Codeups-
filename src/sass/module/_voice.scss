@@ -1,6 +1,46 @@
 @use "global" as *;
 
 .voice {
+    padding-top: rem(45);
+    padding-bottom: rem(80);
+    @include mq("md") {
+        padding-top: rem(105);
+        padding-bottom: rem(140);
+    }
+}
+
+.voice__inner.inner {
+    padding-right: rem(15);
+    padding-left: rem(15);
+    margin-right: auto;
+    margin-left: auto;
+    @include mq("md") {
+        padding-right: rem(25);
+        padding-left: rem(25);
+    }
+}
+
+.voice__container {
+    margin-top: rem(45);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    @include mq("md") {
+        margin-top: rem(25);
+    }
+}
+
+.voice__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: rem(30);
+    @include mq("md") {
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(35);
+    }
+}
+
+.voice-card {
     position: relative;
     width: rem(345);
     box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, .25);
@@ -9,7 +49,12 @@
     }
 }
 
+
 .voice__card-container {
+    padding-top: rem(16);
+    padding-right: rem(16);
+    padding-left: rem(16);
+    padding-bottom: rem(24);
     @include mq("md") {
         padding: rem(24);
     }
@@ -25,7 +70,7 @@
     flex-direction: column;
     width: rem(149);
     @include mq("md") {
-        width: rem(276);
+        width: rem(280);
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-end;
@@ -47,13 +92,21 @@
         width: rem(60);
     }
 }
+
 .voice__text-box-maintitle {
-    width: rem(108);
+    display: inline-flex;
+    max-width: rem(120);
     white-space: nowrap;
     @include mq("md") {
         width: rem(116);
         margin-left: auto;
+    }
+}
 
+.voice__text-box-subtitle {
+    width: rem(149);
+    @include mq("md") {
+        width: rem(276);
     }
 }
 
@@ -79,8 +132,6 @@
 }
 
 .voice__block-subtext {
-    margin-top: rem(16);
-    width: rem(313);
     font-family: $base-font-family;
     font-size: rem(16);
     line-height: 1.5;
@@ -88,4 +139,9 @@
         margin-top: rem(40);
         width: rem(480);
     }
+}
+
+.voice__button {
+    margin-top: rem(85);
+    text-align: center;
 }

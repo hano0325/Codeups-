@@ -1,8 +1,13 @@
 @use "global" as *;
 
-// .blog {
-//     padding-bottom: rem(40);
-// }
+.blog {
+    padding-top: rem(86);
+    padding-bottom: rem(40);
+    @include mq("md") {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
 
 .blog__bg {
     @include mq("md") {
@@ -12,14 +17,15 @@
         background-image:url(../images/common/blog-bg.jpg); /*背景画像を指定*/
         background-repeat: no-repeat; /*背景画像の繰り返しを解除*/
         background-position: top center; /*背景画像の表示位置指定*/
-        background-size: 100% 500px;
+        background-size: 100% auto;
     }
 }
 
 
 .blog__inner.inner {
-    padding-right: rem(15);
-    padding-left: rem(15);
+    position: relative;
+    padding-right: rem(21);
+    padding-left: rem(21);
     margin-right: auto;
     margin-left: auto;
     @include mq("md") {
@@ -29,6 +35,42 @@
 }
 
 .blog__container {
-    margin-top: rem(80);
-    padding-bottom: rem(40);
+    z-index: 100;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(30);
+    @include mq("md") {
+        margin-top: rem(93);
+        padding-bottom: rem(40);
+    }
+}
+
+.blog__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: rem(40);
+    @include mq("md") {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.blog__button {
+    margin-top: rem(50);
+    text-align: center;
+    @include mq("md") {
+        margin-top: rem(85);
+    }
+}
+
+.blog__img-fish {
+    display: none;
+    @include mq("md") {
+        position: absolute;
+        z-index: 100;
+        display: inline-block;
+        left: 7%;
+        top: -9%;
+        width: calc(437 / 1440 *100%);
+    }
 }

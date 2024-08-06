@@ -4,8 +4,16 @@
     text-align: center;
 }
 
+
 .title  span{
     color: $lightblue;
+}
+
+.title--white,
+.title--white span{
+    @include mq("md") {
+        color: $white;
+    }
 }
 
 .title-main {

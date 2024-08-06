@@ -5,7 +5,7 @@
     z-index: -2;
     background-color: $lightblue2;
     padding-top: rem(80);
-    padding-bottom: rem(87);
+    padding-bottom: rem(80);
     @include mq("md") {
         padding-top: rem(100);
     }
