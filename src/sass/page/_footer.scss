@@ -27,8 +27,22 @@
     }
 }
 
+.footer__menu-logo {
+    @include mq("md") {
+        margin-left: rem(40);
+    }
+}
+
+.footer__menu-logo.menu-logo img {
+    max-width: rem(120);
+    @include mq("md") {
+        max-width: rem(400);
+    }
+}
+
 .footer__menu-sns-button-items {
     display: flex;
+    margin-top: rem(10);
     @include mq("md") {
         margin-left: rem(40);
         align-items: flex-end;
@@ -46,7 +60,7 @@
 }
 
 .footer__menu-sns-button-item:not(:first-child) {
-    margin-left: rem(16);
+    margin-left: rem(15);
 }
 
 .footer__copyright {
@@ -59,8 +73,8 @@
     white-space: nowrap;
     text-align: center;
     @include mq("md") {
-        margin-top: rem(80);
-        font-size: rem(18);
-        line-height: 1.826;
+        font-size: rem(14);
+        margin-top: rem(65);
+        line-height: 1.428;
     }
 }

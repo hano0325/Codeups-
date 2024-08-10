@@ -1,19 +1,23 @@
 @use "global" as *;
 
-.cycle__button {
-    position: relative;
+.cycle-button {
+    position: fixed;
+    right: 0;
     width: rem(48);
     height: rem(48);
     border: 1px solid $lightblue;
     border-radius: 50%;
-    z-index: 1000;
+    left: 83%;
+    top: 51%;
+    z-index: 9999;
     @include mq("md") {
+        left: 93%;
         width: rem(80);
         height: rem(80);
     }
 }
 
-.cycle__button a::after {
+.cycle-button::after {
     position: absolute;
     top: 6%;
     left: 35%;

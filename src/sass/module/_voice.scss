@@ -5,11 +5,12 @@
     padding-bottom: rem(80);
     @include mq("md") {
         padding-top: rem(105);
-        padding-bottom: rem(140);
+        padding-bottom: rem(150);
     }
 }
 
 .voice__inner.inner {
+    position: relative;
     padding-right: rem(15);
     padding-left: rem(15);
     margin-right: auto;
@@ -20,13 +21,37 @@
     }
 }
 
+.voice__img-fish-main {
+    display: none;
+    @include mq("md") {
+        position: absolute;
+        z-index: 100;
+        display: inline-block;
+        left: -7.5%;
+        top: -41%;
+        width: calc(400 / 1440 *100%);
+    }
+}
+
+.voice__img-fish-sub {
+    display: none;
+    @include mq("md") {
+        position: absolute;
+        z-index: 100;
+        display: inline-block;
+        left: 93.5%;
+        top: 83%;
+        width: calc(98 / 1440 *100%);
+    }
+}
+
 .voice__container {
     margin-top: rem(45);
     display: grid;
     justify-content: center;
     align-items: center;
     @include mq("md") {
-        margin-top: rem(25);
+        margin-top: rem(30);
     }
 }
 
@@ -142,6 +167,9 @@
 }
 
 .voice__button {
-    margin-top: rem(85);
+    margin-top: rem(40);
     text-align: center;
+    @include mq("md") {
+        margin-top: rem(80);
+    }
 }
