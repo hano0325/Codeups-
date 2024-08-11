@@ -10,6 +10,7 @@
     left: 83%;
     top: 51%;
     z-index: 9999;
+    cursor: pointer;
     @include mq("md") {
         left: 93%;
         width: rem(80);

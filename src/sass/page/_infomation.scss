@@ -1,8 +1,6 @@
 @use "global" as *;
 
 .information {
-    position: relative;
-    z-index: -2;
     background-color: $lightblue2;
     padding-top: rem(80);
     padding-bottom: rem(80);

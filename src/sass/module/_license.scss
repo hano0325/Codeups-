@@ -73,5 +73,7 @@
 .license__button {
     margin-top: rem(40);
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
