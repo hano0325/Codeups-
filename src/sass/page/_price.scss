@@ -26,9 +26,9 @@
     @include mq("md") {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: center;
         column-gap: rem(93);
-        margin-top: rem(40);
+        margin-top: rem(80);
     }
 }
 
@@ -37,7 +37,7 @@
     width: 100%;
     @include mq("md") {
         width: rem(492);
-        margin-right: rem(120);
+        flex-shrink: 0;
     }
 }
 
@@ -68,7 +68,6 @@
 
 .price__items {
     @include mq("md") {
-        margin-left: rem(120);
         width: 35%;
     }
 }
@@ -108,7 +107,8 @@
 .price__item-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .price__item-event,
@@ -116,7 +116,7 @@
     font-size: rem(14);
     line-height: 1.714;
     color: $blue;
-    font-weight: $regular;
+    font-weight: $normal;
     font-family: $base-font-family;
     @include mq("md") {
         font-size: rem(16);

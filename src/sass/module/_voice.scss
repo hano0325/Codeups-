@@ -51,7 +51,7 @@
     justify-content: center;
     align-items: center;
     @include mq("md") {
-        margin-top: rem(30);
+        margin-top: rem(40);
     }
 }
 
@@ -110,7 +110,7 @@
 
 .voice__profile {
     font-size: rem(12);
-    font-weight: $regular;
+    font-weight: $normal;
     font-family: $base-font-family;
     color: $blue;
     @include mq("md") {
@@ -129,9 +129,11 @@
 }
 
 .voice__text-box-subtitle {
+    font-weight: $medium;
     width: rem(149);
     @include mq("md") {
         width: rem(276);
+        font-size: rem(24);
     }
 }
 
@@ -161,7 +163,6 @@
     font-size: rem(16);
     line-height: 1.5;
     @include mq("md") {
-        margin-top: rem(40);
         width: rem(480);
     }
 }

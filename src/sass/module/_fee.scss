@@ -11,6 +11,7 @@
     font-size: rem(20);
     text-decoration: line-through;
     text-decoration-color: $red;
+    color: $blue;
     margin-right: rem(16);
     padding-top: rem(11);
     font-family: $lato-font;
@@ -18,7 +19,7 @@
     line-height: 1;
     @include mq("md") {
         padding-top: rem(16);
-        font-size: rem(20);
+        font-size: rem(24);
         margin-right: rem(25);
     }
 }

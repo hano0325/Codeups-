@@ -43,6 +43,7 @@
     display: block;
     margin-top: rem(16);
     width: 100%;
+    color: $blue;
     @include mq("md") {
         width: rem(492);
         margin-top: 0;
@@ -52,7 +53,7 @@
 
 .license__title-sub {
     font-family: $base-font-family;
-    font-size: 20px;
+    font-size: rem(20);
     line-height: 1.2;
     color: $blue;
     font-weight: $bold;

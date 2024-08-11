@@ -81,7 +81,7 @@
 
 .dive__text-container-title {
     font-family: $Gotu-font;
-    font-weight: $regular;
+    font-weight: $normal;
     font-size: rem(40);
     line-height: 1;
     color: $lightblue;
@@ -96,7 +96,7 @@
 }
 
 .dive__container-sub {
-    font-weight: $regular;
+    font-weight: $normal;
     @include mq("md") {
         width: rem(400);
         color: $white;
@@ -104,7 +104,7 @@
 }
 
 .dive__container-sub-subtext {
-    font-weight: $regular;
+    font-weight: $bold;
     margin-top: rem(16);
     @include mq("md") {
         width: rem(400);

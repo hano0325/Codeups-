@@ -11,16 +11,16 @@
     min-height: inherit;
   }
 
-  // .mv--lower {
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: cover;
-  //   height: rem(460);
+  .mv--lower {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: rem(460);
 
-  //   @include mq("md") {
-  //     height: rem(548);
-  //   }
-  // }
+    @include mq("md") {
+      height: rem(548);
+    }
+  }
 
 
   .mv__slider {
@@ -50,6 +50,7 @@
     line-height: 1.2;
     letter-spacing: 0.54em;
     text-transform: uppercase;
+    font-weight: $normal;
 
     @include mq("md") {
       width: 100%;
@@ -61,7 +62,7 @@
 .mv__title-sub {
   position: absolute;
   font-family: $Gotu-font;
-  font-weight: $regular;
+  font-weight: $normal;
   font-size: rem(20);
   line-height: 1.7;
   left: 19%;
