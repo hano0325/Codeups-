@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.inner {
+    padding-right: rem(15);
+    padding-left: rem(15);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(600);
+    @include mq("md") {
+        max-width: rem(1100);
+        padding-right: rem(25);
+        padding-left: rem(25);
+    }
+}

@@ -54,6 +54,7 @@
     flex-direction: column;
     @include mq("md") {
         flex-direction: row;
+        justify-content: center;
         gap: rem(163);
     }
 }
@@ -66,7 +67,6 @@
         width: rem(440);
         padding-top: rem(85);
         padding-bottom: rem(75);
-        margin-left: rem(30);
     }
 }
 
@@ -200,7 +200,6 @@
     @include mq("md") {
         width: rem(315);
         margin-top: 0;
-        margin-right: rem(80);
         padding:rem(100) 0;
     }
 }

@@ -64,10 +64,23 @@
     flex-direction: column;
     margin-top: rem(32);
     gap: rem(24);
+    transition: all 0.3s;
     @include mq("md") {
         margin-top: rem(25);
     }
 }
+
+.menu__nav-item-main a,
+.menu__nav-item-sub a {
+    transition: all 0.3s;
+}
+
+.menu__nav-item-main a:hover,
+.menu__nav-item-sub a:hover {
+    opacity: 0.7;
+}
+
+
 
 .menu__nav-container-first:not(:first-child)
 .menu__nav-container-second:not(:first-child) {
