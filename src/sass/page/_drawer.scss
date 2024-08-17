@@ -11,6 +11,7 @@
     left: 0;
     background-color: $lightblue;
     z-index: 1000;
+    overflow-y: scroll;
 }
 
 .drawer__nav-inner {

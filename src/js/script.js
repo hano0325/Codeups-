@@ -73,9 +73,9 @@ var campaignSwiper = new Swiper('.swiper-container', {
       spaceBetween: 24, // スライド間のスペース
     },
 
-    // タブレットおよびPC用（1440px以上）
-    1440: {
-      slidesPerView: 3.5, // 一度に表示するスライド数
+    // タブレットおよびPC用（768px以上）
+    768: {
+      slidesPerView: 3.3, // 一度に表示するスライド数
       slidesPerGroup: 1, // 一度に移動するスライド数
       initialSlide: 1, // 初期表示スライド
       spaceBetween: 40, // スライド間のスペース

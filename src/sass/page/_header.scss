@@ -21,7 +21,6 @@
     justify-content: space-between;
     height: inherit;
     @include mq("md") {
-        max-width: rem(1430);
         padding-left: rem(40);
     }
 }
@@ -66,11 +65,14 @@
 .header__nav-link {
     display: flex;
     color: $white;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
     font-family: $base-font-family;
     font-weight: $normal;
     line-height: 1;
     font-size: rem(10);
-    padding: rem(27) rem(20);
+    padding: 0 rem(20);
     white-space: nowrap;
     flex-direction: column;
     text-align: center;

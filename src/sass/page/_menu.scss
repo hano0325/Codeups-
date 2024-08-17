@@ -99,7 +99,8 @@
 .menu__nav-item-main::before {
     position: absolute;
     content: url(../images/common/hitode.svg);
-    left: -15%;
+    left: rem(-20);
+    top: -8%;
 }
 
 .menu__nav-item-sub a{
