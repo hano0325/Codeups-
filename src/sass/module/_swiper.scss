@@ -1,15 +1,14 @@
 @use "global" as *;
 
-.swiper-slide picture,
-.swiper-slide img {
+.swiper-mv-wrapper,
+.swiper-mv-slide,
+.swiper-mv-slide picture,
+.swiper-mv-slide img {
   min-height: rem(400);
+  height: 100vh;
   object-fit: cover;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
 
 .swiper-button-next,
 .swiper-button-prev {

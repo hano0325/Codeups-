@@ -12,22 +12,17 @@
     min-height: inherit;
   }
 
-  .mv--lower {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: rem(460);
-
-    @include mq("md") {
-      height: rem(548);
-    }
-  }
-
 
   .mv__slider {
     min-height: rem(400);
     height: inherit;
   }
+
+
+  .mv__slider img {
+    height: inherit;
+  }
+
 
   .mv__title-wrap.mv-title {
     position: absolute;
@@ -71,5 +66,16 @@
     left: -1.5%;
     text-align: center;
     width: 100%;
+  }
+}
+
+.mv--lower {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: rem(460);
+
+  @include mq("md") {
+    height: rem(548);
   }
 }

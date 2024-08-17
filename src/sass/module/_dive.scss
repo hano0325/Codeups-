@@ -102,6 +102,8 @@
     font-weight: $bold;
     margin-top: rem(16);
     @include mq("md") {
+        display: flex;
+        flex-shrink: 1;
         width: rem(400);
         font-size: rem(16);
         color: $white;

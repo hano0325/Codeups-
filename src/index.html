@@ -127,20 +127,20 @@
   <div id="mv" class="mv">
     <div class="mv__inner">
       <div class="mv__slider swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+        <div class="swiper-mv-wrapper swiper-wrapper">
+          <div class="swiper-mv-slide swiper-slide">
             <picture>
               <source srcset="./assets/images/common/mv-1-pc.jpg" media="(min-width: 1024px)">
               <img src="./assets/images/common/mv-1-sp.jpg" alt="海の中に亀がいる写真">
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-mv-slide swiper-slide">
             <picture>
               <source srcset="./assets/images/common/mv-2-pc.jpg" media="(min-width: 1024px)">
               <img src="./assets/images/common/mv-2-sp.jpg" alt="海の中で亀とダイバー2人がいる写真">
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-mv-slide swiper-slide">
             <picture>
               <source srcset="./assets/images/common/mv-3-pc.jpg" media="(min-width: 1024px)">
               <img src="./assets/images/common/mv-3-sp.jpg" alt="海と空のが写っている写真">
@@ -162,12 +162,12 @@
   </div>
       <main>
       <section class="campaign">
-        <div class="campaign__inner inner">
+        <div class="campaign__inner">
           <div class="campaign__title title">
             <h2 class="campaign__title-main title-main"><span>C</span>ampaign</h2>
             <p class="campaign__title-sub title-sub"><span>キャンペーン</span></p>
           </div>
-          <div class="campaign__container swiper-container">
+          <div class="campaign-swiper js-campaign-swiper">
             <div class="swiper-wrapper">
               <div class="campaign-slide swiper-slide">
                   <img src="./assets/images/common/campaign1.jpg" alt="海の中に複数の魚がいる写真">
@@ -243,10 +243,10 @@
               </div>
             </a>
         </div>
-        <div class="campaign__button-container">
-          <div class="campaign-button-next swiper-button-next"></div>
-          <div class="campaign-button-prev swiper-button-prev"></div>
-        </div>
+      </div>
+      <div class="campaign__button-container">
+        <div class="campaign-button-next swiper-button-next"></div>
+        <div class="campaign-button-prev swiper-button-prev"></div>
       </div>
     </section>
   <section class="about dive">
