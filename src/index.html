@@ -146,7 +146,7 @@
               <img src="./assets/images/common/mv-3-sp.jpg" alt="海と空のが写っている写真">
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-mv-slide swiper-slide">
             <picture>
               <source srcset="./assets/images/common/mv-4-pc.jpg" media="(min-width: 1024px)">
               <img src="./assets/images/common/mv-4-sp.jpg" alt="海と砂が広がっている写真">
@@ -251,11 +251,10 @@
     </section>
   <section class="about dive">
     <div class="dive__inner inner">
-      <div class="dive__bg bg">
-        <div class="dive__title title">
-          <h2 class="dive__title-main title-main"><span>A</span>bout us</h2>
-          <p class="dive__title-sub title-sub"><span>私たちについて</span></p>
-        </div>
+      <div class="dive__title title">
+        <h2 class="dive__title-main title-main"><span>A</span>bout us</h2>
+        <p class="dive__title-sub title-sub"><span>私たちについて</span></p>
+      </div>
         <div class="dive__img-container dive">
           <div class="dive__img-main">
             <img src="./assets/images/common/ocean2.jpg" alt="海の中に黄色い魚が二匹いる写真">
@@ -263,12 +262,17 @@
           <div class="dive__img-sub">
             <img src="./assets/images/common/ocean1.jpg" alt="沖縄の屋根">
           </div>
+          <div class="dive__bg bg">
+            <div class="dive__img-mini">
+              <img src="./assets/images/common/sango.svg" alt="サンゴの画像" class="dive__bg-img">
+            </div>
+          </div>
           <div class="dive__text-container">
             <h3 class="dive__text-container-title">Dive into<br>
               the Ocean</h3>
               <div class="dive__container-sub">
-                <p class="dive__container-sub-subtext text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br class="u-mobile">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                <p class="dive__container-sub-subtext text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入り</p>
                   <div class="about__container-subbutton dive__container-subbutton">
                     <a href="#" class="button button--transparent">
                       <div class="button__container">
@@ -280,12 +284,9 @@
                 </div>
               </div>
             </div>
-            <div class="dive__img-mini">
-              <img src="./assets/images/common/sango.svg" alt="サンゴの画像" class="dive__bg-img">
-            </div>
           </div>
         </div>
-      </section>
+    </section>
 
   <section class="information license">
     <div class="license__inner inner">
@@ -314,7 +315,7 @@
       </div>
     </div>
   </section>
-  <div class="blog">
+  <section class="blog">
     <div class="blog__bg bg">
       <div class="blog__inner inner">
         <div class="blog__title title title--white">
@@ -377,7 +378,6 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <section class="voice">
       <div class="voice__inner inner">
