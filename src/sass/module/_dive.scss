@@ -111,13 +111,17 @@
     }
 }
 
+.dive__img-mini {
+    overflow: hidden;
+}
+
 .dive__bg-img {
     display: none;
     @include mq("md") {
         position: absolute;
         z-index: 100;
         display: inline-block;
-        left: 87%;
+        right: calc(50% - min(48vw, 40rem));
         top: 88%;
         width: calc(194 / 1130 *100%);
     }

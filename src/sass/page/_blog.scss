@@ -28,9 +28,8 @@
 .blog__inner.inner {
     padding-right: rem(21);
     padding-left: rem(21);
-    margin-right: auto;
-    margin-left: auto;
     @include mq("md") {
+        max-width: rem(1200);
         padding-right: rem(25);
         padding-left: rem(25);
     }
@@ -55,7 +54,7 @@
         position: absolute;
         z-index: 100;
         display: inline-block;
-        left: -6%;
+        left: calc(50% - min(48vw, 38.75rem));
         top: -33%;
         width: calc(437 / 1159 *100%);
     }
@@ -72,6 +71,10 @@
 
 .blog__card {
    cursor: pointer;
+}
+
+.blog__card-container {
+    display: block;
 }
 
 

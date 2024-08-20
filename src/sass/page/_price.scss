@@ -68,7 +68,7 @@
 
 .price__items {
     @include mq("md") {
-        width: 35%;
+        width: 44%;
     }
 }
 
@@ -125,18 +125,17 @@
 }
 
 .price__item-event {
-  white-space: nowrap;
+  white-space: wrap;
   flex-shrink: 0;
   text-align: left;
-  width: 42%;
+  width: 74%;
   @include mq("md") {
-      width: 47%;
+    width: 63%;
 }
 }
 
 .price__item-price {
-    text-align: end;
-    margin-left: 43.5%;
+    text-align: right;
 }
 
 .price__button {
