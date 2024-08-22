@@ -14,10 +14,8 @@
     justify-content: center;
     padding-right: rem(30);
     padding-left: rem(30);
-    margin-right: auto;
-    margin-left: auto;
     @include mq("md") {
-        display: inline;
+        max-width: rem(1130);
         padding-right: rem(25);
         padding-left: rem(25);
     }
@@ -27,12 +25,12 @@
     position: absolute;
     z-index: 100;
     display: inline-block;
-    width: calc(130 / 375 *100%);
-    right: -5%;
+    width: calc(130 / 330 *100%);
+    right: calc(50% - min(48vw, 11rem));
     top: -4%;
     @include mq("md") {
-        width: calc(301 / 1440 *100%);
-        right: 4%;
+        width: calc(301 / 1210 *100%);
+        right: calc(50% - min(48vw, 42rem));
         top: -8%;
     }
 }
@@ -41,11 +39,9 @@
     display: flex;
     flex-direction: column;
     @include mq("md") {
-        max-width: rem(1080);
+        padding-right: rem(120);
+        padding-left: rem(48);
         box-shadow: rem(4) rem(4) rem(10) rgba(0, 0, 0, .25);
-        padding-right: rem(25);
-        padding-left: rem(25);
-        margin: auto;
     }
 }
 
@@ -55,7 +51,7 @@
     @include mq("md") {
         flex-direction: row;
         justify-content: center;
-        gap: rem(163);
+        column-gap: rem(125);
     }
 }
 
@@ -64,7 +60,8 @@
     text-align: center;
     @include mq("md") {
         position: relative;
-        width: rem(440);
+        flex-grow: 1;
+        width: 46%;
         padding-top: rem(85);
         padding-bottom: rem(75);
     }
@@ -159,7 +156,7 @@
     width: 100%;
     gap: rem(4);
     @include mq("md") {
-        width: rem(148);
+        width: 57%;
         margin-top: rem(24);
         text-align: left;
     }
@@ -172,7 +169,6 @@
     width: 100%;
     height: auto;
     @include mq("md") {
-        width: rem(273);
         margin-top: rem(24);
         margin-left: rem(21);
     }
@@ -198,7 +194,7 @@
     margin-top: rem(40);
     text-align: center;
     @include mq("md") {
-        width: rem(315);
+        flex-grow: 1;
         margin-top: 0;
         padding:rem(100) 0;
     }
