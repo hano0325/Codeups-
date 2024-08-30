@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .blog {
-    padding-top: rem(86);
-    padding-bottom: rem(40);
+    margin-top: rem(70);
     @include mq("md") {
+        margin-top: 0;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -11,6 +11,7 @@
 
 
 .blog__bg {
+    background-size: 100% 400px;
     @include mq("md") {
         position: relative;
         z-index: 1;
@@ -18,7 +19,7 @@
         background-image:url(../images/common/blog-bg.jpg); /*背景画像を指定*/
         background-repeat: no-repeat; /*背景画像の繰り返しを解除*/
         background-position: top center; /*背景画像の表示位置指定*/
-        background-size: 100% 500px;
+        background-size: 100% 57%;
     }
 }
 
@@ -44,7 +45,6 @@
     position: relative;
     @include mq("md") {
         margin-top: rem(93);
-        padding-bottom: rem(40);
     }
 }
 
@@ -77,7 +77,13 @@
     display: block;
 }
 
+.blog__card-block {
+    margin-top: rem(18);
+}
 
+.blog__card-block-subtext {
+    margin-top: rem(16);
+}
 
 .blog__card img {
     transition: all 0.3s;

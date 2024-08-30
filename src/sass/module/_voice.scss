@@ -1,11 +1,9 @@
 @use "global" as *;
 
 .voice {
-    padding-top: rem(45);
-    padding-bottom: rem(80);
+    margin-top: rem(90);
     @include mq("md") {
-        padding-top: rem(105);
-        padding-bottom: rem(150);
+        margin-top: rem(120);
     }
 }
 
@@ -149,8 +147,10 @@
     font-family: $base-font-family;
     font-size: rem(16);
     line-height: 1.5;
+    margin-top: rem(15);
     @include mq("md") {
         width: rem(480);
+        margin-top: rem(40);
     }
 }
 

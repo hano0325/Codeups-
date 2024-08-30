@@ -1,11 +1,9 @@
 @use "global" as *;
 
 .contact {
-    padding-top: rem(73);
-    padding-bottom: rem(90);
+    margin-top: rem(73);
     @include mq("md") {
-        padding-top: rem(120);
-        padding-bottom: rem(120);
+        margin-top: rem(120);
     }
 }
 
@@ -163,7 +161,7 @@
 }
 
 
-.contact__img-concept {
+.contact__map {
     display: inline-block;
     margin-top: rem(16);
     width: 100%;
@@ -174,7 +172,7 @@
     }
 }
 
-.contact__img-concept img {
+.contact__map iframe {
     aspect-ratio: 295 / 160;
     width: 100%;
     height: auto;
@@ -183,6 +181,19 @@
         aspect-ratio: 273 / 148;
     }
 }
+
+.contact__map iframe:first-child {
+    display: none;
+    @include mq("md") {
+        display: block;
+    }
+  }
+  .contact__map iframe:last-child {
+      display: block;
+      @include mq("md") {
+        display: none;
+    }
+  }
 
 .contact__title-main--large.title-main{
     font-size: rem(80);

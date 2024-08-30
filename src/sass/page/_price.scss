@@ -2,11 +2,11 @@
 
 .price {
     background-color: $lightblue2;
-    padding-top: rem(85);
+    margin-top: rem(85);
     padding-bottom: rem(90);
     @include mq("md") {
-        padding-top: rem(110);
-        padding-bottom: rem(110);
+        margin-top: rem(160);
+        padding-bottom: rem(80);
     }
 }
 
@@ -54,15 +54,22 @@
     }
 }
 
+.price__title-main {
+    padding-top: rem(80);
+    @include mq("md") {
+    padding-top: rem(100);
+    }
+}
+
 .price__img-fish {
     display: none;
     @include mq("md") {
         position: absolute;
         z-index: 100;
         display: inline-block;
-        left: 6%;
-        top: 100%;
-        width: calc(437 / 1440 *100%);
+        left: calc(50% - min(48vw, 38rem));
+        top: 95%;
+        width: calc(437 / 1200 *100%);
     }
 }
 

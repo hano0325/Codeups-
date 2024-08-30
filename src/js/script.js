@@ -1,9 +1,12 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-  $(".js-hamburger, .js-drawer").click(function() {
-    $(".js-hamburger").toggleClass("is-active");
-    $(".js-drawer").fadeToggle();
-  })
+  $('.js-hamburger, .js-drawerClose').on('click', function () {
+    if($('.js-hamburger').hasClass('is-active')) {
+      closeDrawer();
+    } else {
+      openDrawer();
+    }
+});
 });
 
 
@@ -18,12 +21,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   function openDrawer() {
     $(".js-drawer").fadeIn();
     $(".js-hamburger").addClass("is-active");
+    $("body").addClass("no-scroll");  // スクロールを無効化
   }
 
   // 新しい関数: closeDrawer
   function closeDrawer() {
     $(".js-drawer").fadeOut();
     $(".js-hamburger").removeClass("is-active");
+    $("body").removeClass("no-scroll");   // スクロールを無効化
   }
 
   var topBtn = $('.cycle__button');

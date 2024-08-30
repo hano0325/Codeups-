@@ -4,19 +4,52 @@
 .drawer {
     position: fixed;
     display: none;
-    padding:rem(100) 0 rem(150) ;
+    padding:0 0 rem(10) ;
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
     background-color: $lightblue;
     z-index: 1000;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+.drawer__inner {
+    padding-right: rem(15);
+    padding-left: rem(15);
+    display: flex;
+    justify-content: space-between;
+    height: rem(80);
+}
+
+.drawer__logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    z-index: 100;
+    overflow: hidden;
+}
+
+
+.drawer__logo img{
+    max-width: rem(100);
+    @include mq("md") {
+        max-width: rem(133);
+    }
+}
+
+.drawer__logo a {
+    padding-top: rem(25);
+    padding-bottom: rem(21);
 }
 
 .drawer__nav-inner {
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: rem(15);
-        padding-left: rem(15);
+    position: relative;
+    z-index: 9999;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: rem(15);
+    padding-left: rem(15);
 }

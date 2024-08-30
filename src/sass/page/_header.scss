@@ -31,7 +31,8 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    z-index: 9999;
+    z-index: 100;
+    overflow: hidden;
 }
 
 
@@ -52,6 +53,7 @@
     @include mq("md") {
         display: flex;
         height: inherit;
+        gap: rem(40);
     }
 }
 
@@ -72,7 +74,7 @@
     font-weight: $normal;
     line-height: 1;
     font-size: rem(10);
-    padding: 0 rem(20);
+    // padding: 0 rem(20);
     white-space: nowrap;
     flex-direction: column;
     text-align: center;

@@ -2,17 +2,17 @@
 
 .cycle-button {
     position: fixed;
-    right: 0;
     width: rem(48);
     height: rem(48);
     border: 1px solid $lightblue;
     border-radius: 50%;
-    left: 83%;
-    top: 51%;
+    left: auto;
+    top: auto;
+    right: 2%;
+    bottom: 2%;
     z-index: 9999;
     cursor: pointer;
     @include mq("md") {
-        left: 93%;
         width: rem(80);
         height: rem(80);
     }
@@ -20,7 +20,7 @@
 
 .cycle-button::after {
     position: absolute;
-    top: 6%;
+    top: 15%;
     left: 35%;
     content: url(../images/common/Vector-mini.svg);
     margin: auto;

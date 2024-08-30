@@ -6,7 +6,6 @@
 }
 
 .card-container {
-    width: 100%;
     padding-top: rem(16);
     padding-right: rem(16);
     padding-left: rem(16);
@@ -26,15 +25,6 @@
     object-fit: cover;
 }
 
-.card__block {
-    padding-top: rem(18);
-}
-
-
-
-.card__block-text {
-    margin-top: rem(24);
-}
 
 .card__block-date {
     color: $blue;
@@ -61,5 +51,4 @@
 
 .card__block-subtext {
     font-weight: $normal;
-    padding-top: rem(16);
 }
