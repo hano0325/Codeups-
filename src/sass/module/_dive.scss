@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .dive__inner.inner {
+    position: relative;
     @include mq("md") {
         max-width: rem(1130);
     }
@@ -66,9 +67,9 @@
     @include mq("md") {
         margin-top: rem(50);
         display: flex;
-        left: 19%;
+        left: 20%;
         position: absolute;
-        top: 11%;
+        top: 31%;
         gap: rem(15);
         width: 76%;
     }
@@ -107,21 +108,5 @@
         width: 100%;
         font-size: rem(16);
         color: $white;
-    }
-}
-
-.dive__img-mini {
-    overflow: hidden;
-}
-
-.dive__bg-img {
-    display: none;
-    @include mq("md") {
-        position: absolute;
-        z-index: 100;
-        display: inline-block;
-        right: calc(50% - min(48vw, 40rem));
-        top: 88%;
-        width: calc(194 / 1130 *100%);
     }
 }

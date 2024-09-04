@@ -1,12 +1,27 @@
 @use "global" as *;
 
 .price {
+    position: relative;
     background-color: $lightblue2;
-    margin-top: rem(85);
-    padding-bottom: rem(90);
+    margin-top: rem(90);
+    padding-top: rem(100);
+    padding-bottom: rem(100);
     @include mq("md") {
         margin-top: rem(160);
-        padding-bottom: rem(80);
+        padding-top: rem(90);
+    }
+}
+
+.price::before {
+    display: none;
+    @include mq("md") {
+        content: url(../images/common/fish-price.svg);
+        position: absolute;
+        z-index: 100;
+        display: inline-block;
+        left: calc(50% - min(48vw, 38rem));
+        width: calc(437 / 1440 *100%);
+        top: 76%;
     }
 }
 
@@ -22,13 +37,13 @@
 }
 
 .price__container {
-    margin-top: rem(34);
+    margin-top: rem(24);
     @include mq("md") {
+        margin-top: rem(35);
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         column-gap: rem(93);
-        margin-top: rem(80);
     }
 }
 
@@ -51,25 +66,6 @@
         height: 100%;
         object-fit: cover;
         aspect-ratio: 746 / 492;
-    }
-}
-
-.price__title-main {
-    padding-top: rem(80);
-    @include mq("md") {
-    padding-top: rem(100);
-    }
-}
-
-.price__img-fish {
-    display: none;
-    @include mq("md") {
-        position: absolute;
-        z-index: 100;
-        display: inline-block;
-        left: calc(50% - min(48vw, 38rem));
-        top: 95%;
-        width: calc(437 / 1200 *100%);
     }
 }
 

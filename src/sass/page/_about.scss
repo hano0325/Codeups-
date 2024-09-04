@@ -1,9 +1,23 @@
 @use "global" as *;
 
 .about {
+    position: relative;
    margin-top: rem(60);
     @include mq("md") {
         margin-top: rem(171);
+    }
+}
+
+.about::after {
+    display: none;
+    @include mq("md") {
+        position: absolute;
+        content: url(../images/common/sango.svg);
+        z-index: 100;
+        display: inline-block;
+        right: calc(50% - min(48vw, 40rem));
+        top: 88%;
+        height: 100%;
     }
 }
 

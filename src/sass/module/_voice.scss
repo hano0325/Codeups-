@@ -14,27 +14,27 @@
     }
 }
 
-.voice__img-fish-main {
+.voice__inner.inner::before {
     display: none;
     @include mq("md") {
+        content: url(../images/common/fish-blue-left.svg);
         position: absolute;
         z-index: 100;
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: -41%;
-        width: calc(400 / 1440 *100%);
+        top: -19%;
     }
 }
 
-.voice__img-fish-sub {
+.voice__inner.inner::after {
     display: none;
     @include mq("md") {
+        content: url(../images/common/tatu.svg);
         position: absolute;
         z-index: 100;
         display: inline-block;
         right: calc(50% - min(48vw, 34rem));
-        top: 83%;
-        width: calc(98 / 1440 *100%);
+        top: 85%;
     }
 }
 

@@ -15,11 +15,15 @@
 }
 
 .drawer__inner {
+    position: fixed;
+    background-color: $lightblue;
     padding-right: rem(15);
     padding-left: rem(15);
     display: flex;
     justify-content: space-between;
     height: rem(80);
+    width: 100%;
+    z-index: 1000;
 }
 
 .drawer__logo {
@@ -28,7 +32,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    z-index: 100;
+    z-index: 5000;
     overflow: hidden;
 }
 
@@ -47,7 +51,7 @@
 
 .drawer__nav-inner {
     position: relative;
-    z-index: 9999;
+    z-index: 100;
     margin-right: auto;
     margin-left: auto;
     padding-right: rem(15);

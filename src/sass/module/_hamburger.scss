@@ -5,7 +5,7 @@
     display: block;
     width: rem(32);
     top: 0;
-    z-index: 1000;
+    z-index: 5000;
     height: inherit;
     @include mq("md") {
         display: none;

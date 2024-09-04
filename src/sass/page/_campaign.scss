@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .campaign {
+    overflow: hidden;
     position: relative;
     margin-top: rem(40);
     @include mq("md") {
@@ -8,44 +9,24 @@
     }
 }
 
-.campaign__inner {
+.campaign__inner.inner {
     position: relative;
-    overflow: hidden;
-    margin-left: auto;
-    padding-left: rem(15);
-    max-width: rem(400);
-    @include mq("md") {
-        max-width: rem(1250);
-        padding-left: rem(10);
-    }
+}
+
+.campaign__container {
+    margin-top: rem(40);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
 }
 
 .campaign-swiper {
-    margin-top: rem(40);
-    width: 100%;
-    height: 100%;
+    padding: rem(8);
 }
 
 .campaign__title {
     position: relative;
-    display: inline-block;
-    top: 50%;
-    left: 27%;
-    @include mq("md") {
-        left: 36%;
-
-    }
 }
 
-.campaign__container.swiper-container {
-    margin-top: rem(31);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    @include mq("md") {
-        margin-top: rem(45);
-    }
-}
 
 .campaign__container-text {
     display: flex;
@@ -88,7 +69,7 @@
     @include mq("md") {
         position: absolute;
         right: 15%;
-        top: 3%;
+        top: 4%;
         width: rem(240);
     }
 }
@@ -136,10 +117,8 @@
     text-align: center;
     padding-bottom: rem(10);
     @include mq("md") {
-        display: inline-block;
         margin-top: rem(80);
         text-align: center;
-        width: 87%;
     }
 }
 

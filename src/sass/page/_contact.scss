@@ -1,9 +1,24 @@
 @use "global" as *;
 
 .contact {
+    position: relative;
     margin-top: rem(73);
     @include mq("md") {
-        margin-top: rem(120);
+        margin-top: rem(140);
+    }
+}
+
+.contact::before {
+    position: absolute;
+    content: url(../images/common/fish-right.svg);
+    z-index: 100;
+    display: inline-block;
+    right: calc(50% - min(48vw, 11rem));
+    top: -4%;
+    @include mq("md") {
+        content: url(../images/common/fish-right-pc.svg);
+        right: calc(50% - min(48vw, 41rem));
+        top: -8%;
     }
 }
 
@@ -16,20 +31,6 @@
         max-width: rem(1130);
         padding-right: rem(25);
         padding-left: rem(25);
-    }
-}
-
-.contact__img-fish {
-    position: absolute;
-    z-index: 100;
-    display: inline-block;
-    width: calc(130 / 330 *100%);
-    right: calc(50% - min(48vw, 11rem));
-    top: -4%;
-    @include mq("md") {
-        width: calc(301 / 1210 *100%);
-        right: calc(50% - min(48vw, 42rem));
-        top: -8%;
     }
 }
 
@@ -50,6 +51,8 @@
         flex-direction: row;
         justify-content: center;
         column-gap: rem(125);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
     }
 }
 
@@ -60,8 +63,6 @@
         position: relative;
         flex-grow: 1;
         width: 46%;
-        padding-top: rem(85);
-        padding-bottom: rem(75);
     }
 }
 
@@ -207,7 +208,6 @@
     @include mq("md") {
         flex-grow: 1;
         margin-top: 0;
-        padding:rem(100) 0;
     }
 }
 

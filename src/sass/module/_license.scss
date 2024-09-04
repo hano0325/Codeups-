@@ -6,13 +6,6 @@
     }
 }
 
-.license__title-main.title {
-    padding-top: rem(85);
-    @include mq("md") {
-        padding-top: rem(100);
-    }
-}
-
 .license__container {
     @include mq("md") {
         display: flex;
