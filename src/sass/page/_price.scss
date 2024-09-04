@@ -15,7 +15,7 @@
 .price::before {
     display: none;
     @include mq("md") {
-        content: url(../images/common/fish-price.svg);
+        content: url(../images/common/fish-pc.svg);
         position: absolute;
         z-index: 100;
         display: inline-block;
