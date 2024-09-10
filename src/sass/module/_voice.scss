@@ -17,7 +17,12 @@
 .voice__inner.inner::before {
     display: none;
     @include mq("md") {
-        content: url(../images/common/fish-blue-left.svg);
+        background-image: url(../images/common/fish-blue-left.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content:"";
+        width: rem(301);
+        height: rem(138);
         position: absolute;
         z-index: 100;
         display: inline-block;
@@ -29,8 +34,13 @@
 .voice__inner.inner::after {
     display: none;
     @include mq("md") {
-        content: url(../images/common/tatu.svg);
+        background-image: url(../images/common/tatu.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content:"";
         position: absolute;
+        width: rem(71);
+        height: rem(162);
         z-index: 100;
         display: inline-block;
         right: calc(50% - min(48vw, 34rem));
@@ -105,29 +115,26 @@
 
 .voice__text-box-maintitle {
     display: inline-flex;
-    max-width: rem(120);
+    width: 30%;
     white-space: nowrap;
     @include mq("md") {
-        width: rem(116);
         margin-left: auto;
     }
 }
 
 .voice__text-box-subtitle {
     font-weight: $medium;
-    width: rem(149);
+    width: 100%;
     @include mq("md") {
-        width: rem(276);
         font-size: rem(24);
     }
 }
 
 .voice__card-content {
     position: relative;
-    width: 100%;
+    width: 37%;
     margin-left: rem(13);
     @include mq("md") {
-        width: rem(180);
         margin-left: rem(16);
     }
 }
@@ -147,9 +154,9 @@
     font-family: $base-font-family;
     font-size: rem(16);
     line-height: 1.5;
+    width: 100%;
     margin-top: rem(15);
     @include mq("md") {
-        width: rem(480);
         margin-top: rem(40);
     }
 }

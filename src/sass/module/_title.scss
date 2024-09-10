@@ -20,6 +20,7 @@
     line-height: 1.25;
     font-family: $Gotu-font;
     font-weight: $normal;
+    display: block;
     @include mq("md") {
         font-size: rem(40);
         line-height: 1;
@@ -35,11 +36,16 @@
 }
 
 .title-sub {
+    display: block;
     font-size: rem(12);
+    margin-top: rem(4);
     line-height: 1.5;
     font-family: $base-font-family;
     font-weight: $normal;
     text-align: center;
     color: $lightblue;
+    @include mq("md") {
+        margin-top: rem(8);
+    }
 }
 

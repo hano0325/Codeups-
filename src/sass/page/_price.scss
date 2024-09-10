@@ -15,12 +15,16 @@
 .price::before {
     display: none;
     @include mq("md") {
-        content: url(../images/common/fish-price.svg);
         position: absolute;
+        background-image: url(../images/common/fish-price.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content:"";
         z-index: 100;
         display: inline-block;
         left: calc(50% - min(48vw, 38rem));
         width: calc(437 / 1440 *100%);
+        height: rem(201);
         top: 76%;
     }
 }
