@@ -6,6 +6,14 @@
     }
 }
 
+.license-layout {
+    padding-top: rem(85);
+    padding-bottom: rem(90);
+    @include mq("md") {
+       padding-top: rem(100);
+    }
+}
+
 .license__container {
     @include mq("md") {
         display: flex;

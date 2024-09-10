@@ -27,7 +27,13 @@
   }
 }
 
-.blog::after {
+.blog-layout {
+  position: relative;
+  padding-top: rem(80);
+}
+
+
+.blog-layout::after {
   display: none;
   @include mq("md") {
     position: absolute;
@@ -49,7 +55,6 @@
   padding-left: rem(21);
   @include mq("md") {
     max-width: rem(1200);
-    padding-top: rem(80);
     padding-right: rem(25);
     padding-left: rem(25);
   }
