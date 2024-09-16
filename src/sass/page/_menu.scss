@@ -149,7 +149,6 @@
     display: block;
     @include mq("md") {
         display: flex;
-        margin-left: rem(180);
         justify-content: left;
     }
 }
