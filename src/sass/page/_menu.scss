@@ -146,7 +146,7 @@
 }
 
 .menu__logo-container {
-    display: block;
+    display: inline-block;
     @include mq("md") {
         display: flex;
         justify-content: left;
