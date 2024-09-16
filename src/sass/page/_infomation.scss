@@ -7,10 +7,3 @@
        margin-top: rem(150);
     }
 }
-
-.information__container {
-    margin-top: rem(35);
-    @include mq("md") {
-        margin-top: rem(50);
-    }
-}

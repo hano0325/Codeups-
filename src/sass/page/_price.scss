@@ -4,7 +4,7 @@
     position: relative;
     background-color: $lightblue2;
     margin-top: rem(90);
-    padding-top: rem(100);
+    padding-top: rem(68);
     padding-bottom: rem(100);
     @include mq("md") {
         margin-top: rem(160);
@@ -29,7 +29,7 @@
     }
 }
 
-.price__inner.inner {
+.price__inner {
     padding-right: rem(15);
     padding-left: rem(15);
     margin-right: auto;

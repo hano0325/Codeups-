@@ -1,7 +1,24 @@
 @use "global" as *;
 
+.menu__inner {
+    display: flex;
+    position: fixed;
+    background-color: $lightblue;
+    padding-right: rem(15);
+    padding-left: rem(15);
+    justify-content: space-between;
+    height: rem(80);
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu__nav-layout {
+    margin-top: rem(64);
+}
 
 .menu__nav-inner {
+    position: relative;
+    z-index: 100;
     margin-right: auto;
     margin-left: auto;
     padding-right: rem(15);
@@ -12,13 +29,27 @@
     }
 }
 
-.menu-logo {
-    display: inline-block;
+.menu__nav-container {
+    @include mq("md") {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
-.menu-logo img{
-    max-width: rem(102);
+.menu__logo {
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 5000;
+    overflow: hidden;
+}
+
+.menu__logo img{
     text-align: left;
+    max-width: rem(116);
     filter: none;
     @include mq("md") {
         max-width: rem(200);
@@ -35,7 +66,6 @@
     font-family: $base-font-family;
     @include mq("md") {
         line-height: 1.125;
-        justify-content: flex-start;
     }
 }
 
@@ -112,5 +142,55 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+    }
+}
+
+.menu__logo-container {
+    display: block;
+    @include mq("md") {
+        display: flex;
+        margin-left: rem(180);
+        justify-content: left;
+    }
+}
+
+.menu__sns-button-items {
+    display: flex;
+    margin-top: rem(16);
+    gap: rem(16);
+    @include mq("md") {
+        margin-top: 0;
+        margin-left: rem(40);
+        align-items: flex-end;
+    }
+}
+
+.menu__sns-button-item {
+    width: rem(24);
+    height: rem(24);
+    @include mq("md") {
+        width: rem(32);
+        height: rem(32);
+
+    }
+}
+
+.menu-sns-button-item:not(:first-child) {
+    margin-left: rem(15);
+}
+
+.menu__copyright {
+    margin-top: rem(40);
+    font-size: rem(12);
+    font-family: $Gotu-font;
+    font-weight: $normal;
+    line-height: 1.5;
+    color: $white;
+    white-space: nowrap;
+    text-align: center;
+    @include mq("md") {
+        font-size: rem(14);
+        margin-top: rem(65);
+        line-height: 1.428;
     }
 }

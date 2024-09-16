@@ -29,7 +29,10 @@
 
 .blog__layout {
   position: relative;
-  padding-top: rem(80);
+  padding-top: 0;
+  @include mq("md") {
+    padding-top: rem(80);
+  }
 }
 
 
@@ -50,7 +53,7 @@
   }
 }
 
-.blog__inner.inner {
+.blog__inner {
   padding-right: rem(21);
   padding-left: rem(21);
   @include mq("md") {
@@ -72,42 +75,13 @@
   }
 }
 
-.blog__cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: rem(40);
-  @include mq("md") {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.blog__card {
-  cursor: pointer;
-}
-
-.blog__card-container {
-  display: block;
-}
-
-.blog__card-block {
-  margin-top: rem(18);
-}
-
-.blog__card-block-subtext {
-  margin-top: rem(16);
-}
-
 .blog__card img {
   transition: all 0.3s;
   width: 100%;
 }
 
-.blog__card:hover img {
-  transform: scale(1.1);
-}
-
 .blog__button {
-  margin-top: rem(50);
+  margin-top: rem(32);
   text-align: center;
   @include mq("md") {
     margin-top: rem(85);

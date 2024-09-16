@@ -29,7 +29,7 @@
     }
 }
 
-.contact__inner.inner {
+.contact__inner {
     display: flex;
     justify-content: center;
     padding-right: rem(30);
@@ -41,7 +41,7 @@
     }
 }
 
-.contact-card {
+.contact__card {
     display: flex;
     flex-direction: column;
     @include mq("md") {
@@ -109,11 +109,6 @@
 
 .contact__form-button {
     display: inline-block;
-}
-
-
-.contact__title-main--large.title-main {
-    text-align: center;
 }
 
 .contact__title-img{

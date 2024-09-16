@@ -5,17 +5,17 @@
     text-align: center;
 }
 
-.title-main::first-letter {
+.title__main::first-letter {
     color: $lightblue;
 }
 
-.title-main--white::first-letter {
+.title__main--white::first-letter {
     @include mq("md") {
         color: $white;
     }
 }
 
-.title-main {
+.title__main {
     font-size: rem(32);
     line-height: 1.25;
     font-family: $Gotu-font;
@@ -27,15 +27,24 @@
     }
 }
 
-
-.title--white,
-.title--white span{
+.title__main--large {
+    font-size: rem(80);
+    line-height: 1;
     @include mq("md") {
-        color: $white;
+    font-size: rem(80);
+    line-height: 1;
     }
 }
 
-.title-sub {
+.title__main--large,
+.title__sub--shadow {
+    text-shadow: rem(0) rem(4) rem(4) rgba(0, 0, 0, .25);
+    @include mq("md") {
+        text-shadow: none;
+    }
+}
+
+.title__sub {
     display: block;
     font-size: rem(12);
     margin-top: rem(4);
@@ -48,4 +57,13 @@
         margin-top: rem(8);
     }
 }
+
+
+.title__main--white,
+.title__sub--white {
+    @include mq("md") {
+        color: $white;
+    }
+}
+
 

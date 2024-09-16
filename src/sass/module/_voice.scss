@@ -1,20 +1,20 @@
 @use "global" as *;
 
 .voice {
-    margin-top: rem(90);
+    margin-top: rem(80);
     @include mq("md") {
         margin-top: rem(120);
     }
 }
 
-.voice__inner.inner {
+.voice__inner {
     position: relative;
     @include mq("md") {
         max-width: rem(1130);
     }
 }
 
-.voice__inner.inner::before {
+.voice__inner::before {
     display: none;
     @include mq("md") {
         background-image: url(../images/common/fish-blue-left.svg);
@@ -31,7 +31,7 @@
     }
 }
 
-.voice__inner.inner::after {
+.voice__inner::after {
     display: none;
     @include mq("md") {
         background-image: url(../images/common/tatu.svg);
@@ -68,13 +68,18 @@
     }
 }
 
-.voice-card {
+.voice__card {
     position: relative;
     box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, .25);
 }
 
 
 .voice__card-container {
+    display: block;
+    padding-top: rem(16);
+    padding-right: rem(16);
+    padding-left: rem(16);
+    padding-bottom: rem(24);
     @include mq("md") {
         padding: rem(24);
     }
@@ -83,14 +88,15 @@
 .voice__text-container {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
-.voice__text-box.text-box {
+.voice__text-box {
     display: flex;
     flex-direction: column;
-    width: rem(149);
+    width: 48%;
     @include mq("md") {
-        width: rem(280);
+        width: 58%;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-end;
@@ -132,10 +138,11 @@
 
 .voice__card-content {
     position: relative;
-    width: 37%;
+    width: 48%;
     margin-left: rem(13);
     @include mq("md") {
         margin-left: rem(16);
+        width: 37%;
     }
 }
 
@@ -153,6 +160,7 @@
 .voice__block-subtext {
     font-family: $base-font-family;
     font-size: rem(16);
+    font-weight: $normal;
     line-height: 1.5;
     width: 100%;
     margin-top: rem(15);

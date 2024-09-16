@@ -44,7 +44,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   document.addEventListener("DOMContentLoaded", function () {
     // mvセクション用のSwiper
-    const mvSwiper = new Swiper(".mv__slider.swiper", {
+    const mvSwiper = new Swiper(".js-mv-swiper", {
       loop: true,
       effect: "fade",
       speed: 3000,
