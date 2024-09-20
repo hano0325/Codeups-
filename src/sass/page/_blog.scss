@@ -36,7 +36,7 @@
 }
 
 
-.blog-layout::after {
+.blog__layout::after {
   display: none;
   @include mq("md") {
     position: absolute;
