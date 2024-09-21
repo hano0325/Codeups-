@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.dive__layout {
+.dive-layout {
     position: relative;
     margin-top: rem(60);
         @include mq("md") {
@@ -8,7 +8,7 @@
         }
 }
 
-.dive__layout::after {
+.dive::after {
     display: none;
     @include mq("md") {
         position: absolute;

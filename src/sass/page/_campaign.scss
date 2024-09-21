@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.campaign {
+.campaign-layout {
     overflow: hidden;
     position: relative;
     margin-top: rem(40);
@@ -19,7 +19,7 @@
     width: 100vw;
 }
 
-.campaign-swiper {
+.campaign__swiper {
     padding: rem(8);
 }
 
@@ -42,7 +42,7 @@
     }
 }
 
-.campaign-slide {
+.campaign__slide {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -54,7 +54,7 @@
 }
 
 
-.campaign-slide img {
+.campaign__slide img {
     min-height: auto;
     height: auto;
     width: 100%;
@@ -109,6 +109,58 @@
 .campaign__text-box-subtitle {
     margin-top: rem(4);
 }
+
+.campaign__money {
+    margin-top: rem(8);
+    text-align: center;
+    color: $blue;
+    font-size: rem(14);
+    line-height: 1.714285;
+    font-family: $base-font-family;
+    font-weight: $normal;
+    color: $blue;
+    @include mq("md") {
+        margin-top: rem(16);
+        font-size: rem(16);
+        line-height: 1.5;
+    }
+}
+
+.campaign__fee {
+    display: flex;
+    margin-top: rem(8);
+    align-items: center;
+    justify-content: center;
+}
+
+.campaign__discount {
+    font-size: rem(20);
+    text-decoration: line-through;
+    text-decoration-color: $red;
+    color: $blue;
+    margin-right: rem(16);
+    padding-top: rem(11);
+    font-family: $lato-font;
+    font-weight: $bold;
+    line-height: 1;
+    @include mq("md") {
+        padding-top: rem(16);
+        font-size: rem(24);
+        margin-right: rem(25);
+    }
+}
+
+.campaign__main {
+    font-size: rem(32);
+    line-height: 1;
+    font-family: $lato-font;
+    font-weight: $bold;
+    color: $lightblue;
+    @include mq("md") {
+        font-size: rem(40);
+    }
+}
+
 
 
 

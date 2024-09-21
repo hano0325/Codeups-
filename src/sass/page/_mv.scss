@@ -13,19 +13,17 @@
   }
 
 
-  .mv__slider {
+  .mv__slider,
+  .mv__slider img,
+  .mv__slider picture {
     min-height: inherit;
-    height: inherit;
-  }
-
-
-  .mv__slider img {
     height: inherit;
   }
 
 .mv__wrapper,
 .mv__slide,
-.mv__slide img {
+.mv__slide img,
+.mv__slide picture {
   min-height: inherit;
   height: inherit;
   object-fit: cover;
