@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.dive-layout {
-    position: relative;
-    margin-top: rem(60);
-        @include mq("md") {
-            margin-top: rem(171);
-        }
-}
-
 .dive::after {
     display: none;
     @include mq("md") {
