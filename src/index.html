@@ -90,20 +90,20 @@
             >
           </li>
         </ul>
-        <nav class="drawer menu js-drawer">
-          <div class="menu__inner">
-            <h2 class="menu__logo">
+        <nav class="header__drawer drawer js-drawer">
+          <div class="drawer__inner">
+            <h2 class="drawer__logo">
               <a href="#">
                 <img src="./assets/images/common/CodeUps.svg" alt="Codeups"
               /></a>
             </h2>
-            <button class="menu__hamburger hamburger js-hamburger">
+            <button class="drawer__hamburger hamburger js-hamburger">
               <span></span>
               <span></span>
               <span></span>
             </button>
           </div>
-          <div class="menu__nav menu-layout">
+          <div class="menu">
             <div class="menu__nav-inner">
               <div class="menu__nav-items">
                 <div class="menu__nav-container-first">
@@ -368,7 +368,7 @@
                       </p>
                     </div>
                     <div class="campaign__money">
-                      <p class="money__title">全部コミコミ(お一人様)</p>
+                      <p class="campaign__money-title">全部コミコミ(お一人様)</p>
                       <div class="campaign__fee">
                         <p class="campaign__discount">¥20,000</p>
                         <p class="campaign__main">¥16,000</p>
@@ -477,89 +477,85 @@
         </div>
       </section>
       <section class="blog blog-layout">
-        <div class="blog__space">
-          <div class="blog__inner inner">
-            <div class="blog__title title">
-              <p class="title__main title__main--white">Blog</p>
-              <h2 class="title__sub title__sub--white">ブログ</h2>
-            </div>
-            <div class="blog__container">
-              <ul class="blog__cards cards">
-                <li class="card">
-                  <a href="#" class="card__container">
-                    <div class="card__content">
-                      <img
-                        src="./assets/images/common/blog1.jpg"
-                        alt="ピンクの珊瑚と海"
-                      />
-                    </div>
-                    <div class="card__block">
-                      <time datetime="2023-11-17" class="card__block-date"
-                        >2023.11/17</time
-                      >
-                      <p class="card__block-title">ライセンス取得</p>
-                      <p class="card__block-subtext">
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります<br />
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="card">
-                  <a href="#" class="card__container">
-                    <div class="card__content">
-                      <img
-                        src="./assets/images/common/blog-2.jpg"
-                        alt="ピンクの珊瑚と海"
-                      />
-                    </div>
-                    <div class="card__block">
-                      <time datetime="2023-11-17" class="card__block-date"
-                        >2023.11/17</time
-                      >
-                      <p class="card__block-title">ライセンス取得</p>
-                      <p class="card__block-subtext">
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="card">
-                  <a href="#" class="card__container">
-                    <div class="card__content">
-                      <img
-                        src="./assets/images/common/blog-3.jpg"
-                        alt="ピンクの珊瑚と海"
-                      />
-                    </div>
-                    <div class="card__block">
-                      <time datetime="2023-11-17" class="card__block-date"
-                        >2023.11/17</time
-                      >
-                      <p class="card__block-title">ライセンス取得</p>
-                      <p class="card__block-subtext">
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <div class="blog__button">
-                <a href="#" class="button">
-                  <div class="button__container">
-                    <p>View more</p>
+        <div class="blog__inner inner">
+          <div class="blog__title title">
+            <p class="title__main title__main--white">Blog</p>
+            <h2 class="title__sub title__sub--white">ブログ</h2>
+          </div>
+            <ul class="blog__cards cards">
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
                     <img
-                      src="./assets/images/common/Vector.png"
-                      alt=""
-                      class="button__arrow"
+                      src="./assets/images/common/blog1.jpg"
+                      alt="ピンクの珊瑚と海"
                     />
                   </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ライセンス取得</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
                 </a>
-              </div>
+              </li>
+              <li class="card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-2.jpg"
+                      alt="ピンクの珊瑚と海"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ライセンス取得</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-3.jpg"
+                      alt="ピンクの珊瑚と海"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ライセンス取得</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="blog__button">
+              <a href="#" class="button">
+                <div class="button__container">
+                  <p>View more</p>
+                  <img
+                    src="./assets/images/common/Vector.png"
+                    alt=""
+                    class="button__arrow"
+                  />
+                </div>
+              </a>
             </div>
-          </div>
         </div>
       </section>
       <section class="voice voice-layout">
@@ -568,75 +564,73 @@
             <p class="title__main">Voice</p>
             <h2 class="title__sub">お客様の声</h2>
           </div>
-          <div class="voice__container">
-            <ul class="voice__cards cards-voice">
-              <li class="voice__card card-voice">
-                <div class="card__container card__container--voice">
-                  <div class="card__container-text">
-                    <div class="card__text-box text-box">
-                      <p class="card__profile">20代(女性)</p>
-                      <p class="card__text-box-maintitle text-box-maintitle">
-                        ライセンス講習
-                      </p>
-                      <p class="card__text-box-subtitle text-box-subtitle">
-                        ここにタイトルが入ります。ここにタイトル
-                      </p>
-                    </div>
-                    <div class="card__content-voice colorbox">
-                      <div class="color"></div>
-                      <img
-                        src="./assets/images/common/voice.jpg"
-                        alt="麦わら帽子を被った女性の写真"
-                      />
-                    </div>
+          <ul class="voice__cards cards-voice">
+            <li class="cards-voice__card card-voice">
+              <div class="card-voice__container">
+                <div class="card-voice__container-text">
+                  <div class="card-voice__text-box text-box">
+                    <p class="card-voice__profile">20代(女性)</p>
+                    <p class="card-voice__text-box-maintitle text-box-maintitle">
+                      ライセンス講習
+                    </p>
+                    <p class="card-voice__text-box-subtitle text-box-subtitle">
+                      ここにタイトルが入ります。ここにタイトル
+                    </p>
                   </div>
-                  <p class="card__block-subtext card__block-subtext--voice">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
-                </div>
-              </li>
-              <li class="card-voice">
-                <div class="card__container card__container--voice">
-                  <div class="card__container-text">
-                    <div class="card__text-box text-box">
-                      <p class="card__profile">30代(男性)</p>
-                      <p class="card__text-box-maintitle text-box-maintitle">
-                        ファンダイビング
-                      </p>
-                      <p class="card__text-box-subtitle text-box-subtitle">
-                        ここにタイトルが入ります。ここにタイトル
-                      </p>
-                    </div>
-                    <div class="card__content-voice colorbox">
-                      <div class="color"></div>
-                      <img
-                        src="./assets/images/common/voice-2.jpg"
-                        alt="サムズアップをしている黒シャツを着ている男性の写真"
-                      />
-                    </div>
+                  <div class="card-voice__content colorbox">
+                    <div class="color"></div>
+                    <img
+                      src="./assets/images/common/voice.jpg"
+                      alt="麦わら帽子を被った女性の写真"
+                    />
                   </div>
-                  <p class="card__block-subtext card__block-subtext--voice">
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                    ここにテキストが入ります。ここにテキストが入ります。
-                  </p>
                 </div>
-              </li>
-            </ul>
-            <div class="voice__button">
-              <a href="#" class="button">
-                <div class="button__container">
-                  <p>View more</p>
-                  <img
-                    src="./assets/images/common/Vector.png"
-                    alt="矢印"
-                    class="button__arrow"
-                  />
+                <p class="card-voice__block-subtext">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                  ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </div>
+            </li>
+            <li class="card-voice">
+              <div class="card-voice__container">
+                <div class="card-voice__container-text">
+                  <div class="card-voice__text-box text-box">
+                    <p class="card-voice__profile">30代(男性)</p>
+                    <p class="card-voice__text-box-maintitle text-box-maintitle">
+                      ファンダイビング
+                    </p>
+                    <p class="card-voice__text-box-subtitle text-box-subtitle">
+                      ここにタイトルが入ります。ここにタイトル
+                    </p>
+                  </div>
+                  <div class="card-voice__content colorbox">
+                    <div class="color"></div>
+                    <img
+                      src="./assets/images/common/voice-2.jpg"
+                      alt="サムズアップをしている黒シャツを着ている男性の写真"
+                    />
+                  </div>
                 </div>
-              </a>
-            </div>
+                <p class="card-voice__block-subtext">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                  ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="voice__button">
+            <a href="#" class="button">
+              <div class="button__container">
+                <p>View more</p>
+                <img
+                  src="./assets/images/common/Vector.png"
+                  alt="矢印"
+                  class="button__arrow"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -834,11 +828,11 @@
       </section>
       <div class="cycle-button js-page-top"></div>
     </main>
-    <footer class="footer footer-layout menu">
-      <div class="menu__nav-inner">
-        <div class="menu__nav-container">
-          <div class="menu__logo-container">
-            <p class="menu__logo">
+    <footer class="footer footer-layout">
+      <div class="footer__nav-inner inner">
+        <div class="footer__nav-container">
+          <div class="footer__logo-container">
+            <p class="footer__logo">
               <a href="#">
                 <img
                   src="./assets/images/common/CodeUps-logo-light.svg"
@@ -846,15 +840,15 @@
                 />
               </a>
             </p>
-            <ul class="menu__sns-button-items">
-              <li class="menu__sns-button-item">
+            <ul class="footer__sns-button-items">
+              <li class="footer__sns-button-item">
                 <a href="https://www.facebook.com/" target="_blank"
                   ><img
                     src="./assets/images/common/FacebookLogo.svg"
                     alt="facebookのアイコン"
                 /></a>
               </li>
-              <li class="menu__sns-button-item">
+              <li class="footer__sns-button-item">
                 <a href="https://www.instagram.com/" target="_blank"
                   ><img
                     src="./assets/images/common/InstagramLogo.svg"
@@ -863,111 +857,113 @@
               </li>
             </ul>
           </div>
-          <nav class="menu__container">
-            <div class="menu__nav-items">
-              <div class="menu__nav-container-first">
-                <div class="menu__nav-content">
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">キャンペーン</a>
-                    </li>
-                    <li class="menu__nav-item-sub">
-                      <a href="#">ライセンス取得</a>
-                    </li>
-                    <li class="menu__nav-item-sub">
-                      <a href="#">貸切体験ダイビング</a>
-                    </li>
-                    <li class="menu__nav-item-sub">
-                      <a href="#">ナイトダイビング</a>
-                    </li>
-                  </ul>
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">私たちについて</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="menu__nav-content">
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">ダイビング情報</a>
-                    </li>
-                    <li class="menu__nav-item-sub">
-                      <a href="#">ライセンス講習</a>
-                    </li>
-                    <li class="menu__nav-item-sub">
-                      <a href="#">体験ダイビング</a>
-                    </li>
-                    <li class="menu__nav-item-sub">
-                      <a href="#">ファンダイビング</a>
-                    </li>
-                  </ul>
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">ブログ</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="menu__nav-container-second">
-                <div class="menu__nav-content">
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">お客様の声</a>
-                    </li>
-                  </ul>
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">料金一覧</a>
-                    </li>
-                    <li class="-sub menu__nav-item-sub">
-                      <a href="#">ライセンス講習</a>
-                    </li>
-                    <li class="-sub menu__nav-item-sub">
-                      <a href="#">体験ダイビング</a>
-                    </li>
-                    <li class="-sub menu__nav-item-sub">
-                      <a href="#">ファンダイビング</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="menu__nav-content">
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">よくある質問</a>
-                    </li>
-                  </ul>
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#"
-                        >プライバシー<br class="u-mobile" />ポリシー</a
-                      >
-                    </li>
-                  </ul>
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">利用規約</a>
-                    </li>
-                  </ul>
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">サイトマップ</a>
-                    </li>
-                  </ul>
-                  <ul class="menu__nav-item">
-                    <li class="menu__nav-item-main">
-                      <a href="#">お問い合わせ</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <p class="menu__copyright">
-            Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.
-          </p>
         </div>
       </div>
-    </footer>
+      <div class="footer__menu menu">
+        <div class="menu__nav-inner">
+          <div class="menu__nav-items">
+            <div class="menu__nav-container-first">
+              <div class="menu__nav-content">
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">キャンペーン</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">ライセンス取得</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">貸切体験ダイビング</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">ナイトダイビング</a>
+                  </li>
+                </ul>
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">私たちについて</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__nav-content">
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">ダイビング情報</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">ライセンス講習</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">体験ダイビング</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">ファンダイビング</a>
+                  </li>
+                </ul>
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">ブログ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu__nav-container-second">
+              <div class="menu__nav-content">
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">お客様の声</a>
+                  </li>
+                </ul>
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">料金一覧</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">ライセンス講習</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">体験ダイビング</a>
+                  </li>
+                  <li class="menu__nav-item-sub">
+                    <a href="#">ファンダイビング</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__nav-content">
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">よくある質問</a>
+                  </li>
+                </ul>
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#"
+                      >プライバシー<br class="u-mobile" />ポリシー</a
+                    >
+                  </li>
+                </ul>
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">利用規約</a>
+                  </li>
+                </ul>
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">サイトマップ</a>
+                  </li>
+                </ul>
+                <ul class="menu__nav-item">
+                  <li class="menu__nav-item-main">
+                    <a href="#">お問い合わせ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright">
+          Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.
+        </p>
+      </div>
+  </footer>
   </body>
-</html>
+  </html>

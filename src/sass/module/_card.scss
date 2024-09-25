@@ -19,19 +19,24 @@
     padding-bottom: rem(24);
 }
 
-.card__container--voice {
+.card-voice__container {
+    display: block;
+    padding-top: rem(16);
+    padding-right: rem(16);
+    padding-left: rem(16);
+    padding-bottom: rem(24);
     @include mq("md") {
         padding: rem(24);
     }
 }
 
-.card__container-text {
+.card-voice__container-text {
     display: flex;
     align-items: flex-end;
-    justify-content: space-bet
+    justify-content: space-between;
 }
 
-.card__text-box {
+.card-voice__text-box {
     display: flex;
     flex-direction: column;
     width: 48%;
@@ -43,7 +48,7 @@
     }
 }
 
-.card__profile {
+.card-voice__profile {
     font-size: rem(12);
     font-weight: $normal;
     font-family: $base-font-family;
@@ -53,7 +58,7 @@
     }
 }
 
-.card__text-box-maintitle {
+.card-voice__text-box-maintitle {
     display: inline-flex;
     width: 30%;
     white-space: nowrap;
@@ -62,22 +67,18 @@
     }
 }
 
-.card__text-box-subtitle {
-    padding-top: rem(4);
-    padding-bottom: rem(4);
 
-}
-
-
-.card__text-box-subtitle {
+.card-voice__text-box-subtitle {
     font-weight: $medium;
     width: 100%;
+    padding-top: rem(4);
+    padding-bottom: rem(4);
     @include mq("md") {
         font-size: rem(24);
     }
 }
 
-.card__content-voice {
+.card-voice__content {
     position: relative;
     width: 48%;
     margin-left: rem(13);
@@ -87,7 +88,7 @@
     }
 }
 
-.card__content-voice img{
+.card-voice__content img{
     aspect-ratio: 151 / 117;
     display: inline-block;
     width: 100%;
@@ -98,9 +99,11 @@
     }
 }
 
-.card__block-subtext--voice {
+.card-voice__text-box-subtitle {
+    margin-top: rem(4);
+    padding-bottom: rem(4);
     @include mq("md") {
-        margin-top: rem(40);
+        margin-top: rem(8);
     }
 }
 
@@ -156,4 +159,16 @@
 .card__block-subtext {
     margin-top: rem(16);
     font-weight: $normal;
+}
+
+.card-voice__block-subtext {
+    font-family: $base-font-family;
+    font-size: rem(16);
+    font-weight: $normal;
+    margin-top: rem(16);
+    line-height: 1.5;
+    color: $blue;
+    @include mq("md") {
+        margin-top: rem(40);
+    }
 }
