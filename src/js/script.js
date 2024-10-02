@@ -132,3 +132,30 @@ box.each(function(){
       });
     });
   });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    // タブのボタンとコンテンツをそれぞれ取得
+    const tabButtons = document.querySelectorAll('.js-tab-button');
+    const tabContents = document.querySelectorAll('.js-tab-content');
+  
+    tabButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        // ボタンのdata-number属性を取得
+        const targetTab = button.getAttribute('data-number');
+  
+        // すべてのボタンから「is-active」クラスを削除し、クリックされたボタンに付与
+        tabButtons.forEach((btn) => btn.classList.remove('is-active'));
+        button.classList.add('is-active');
+  
+        // すべてのタブコンテンツを非表示にし、対応するコンテンツだけを表示
+        tabContents.forEach((content) => {
+          if (content.getAttribute('id') === targetTab) {
+            content.classList.add('is-active');
+          } else {
+            content.classList.remove('is-active');
+          }
+        });
+      });
+    });
+  });
+  
