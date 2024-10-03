@@ -44,6 +44,20 @@
     }
 }
 
+.title__main--big {
+    font-size: rem(80);
+    line-height: 1;
+    @include mq("md") {
+    font-size: rem(80);
+    line-height: 1;
+    }
+}
+
+.title__main--big,
+.title__sub--small {
+    text-shadow: none;
+}
+
 .title__sub {
     display: block;
     font-size: rem(12);

@@ -122,7 +122,6 @@
   font-family: $lato-font;
   font-size: rem(40);
   line-height: 1.2;
-  text-transform: capitalize;
   font-weight: $normal;
   @include mq("md") {
     width: 100%;

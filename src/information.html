@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initiascale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
@@ -203,15 +203,15 @@
     <div id="mv" class="mv-lower mv-lower--mask">
       <div class="mv-lower__inner">
         <div class="mv-lower__title">
-          <h1 class="mv-lower__title-main">About us</h1>
+          <h1 class="mv-lower__title-main">Information</h1>
         </div>
         <div class="mv-lower__img">
           <picture>
             <source
-            srcset="./assets/images/common/about-lower.jpg"
+            srcset="./assets/images/common/information-lower.jpg"
             media="(min-width: 768px)"
           />
-            <img  src="./assets/images/common/about-lower-sp.jpg" alt="青空とシーサーが写っている写真">
+            <img  src="./assets/images/common/information-sp.jpg" alt="ダイビング中のダイバーとサンゴ礁の周りに泳ぐカラフルな魚たちの風景">
           </picture>
         </div>
       </div>
@@ -229,102 +229,87 @@
             <img src="./assets/images/common/vecter-b.svg" alt=">">
           </div>
           <span>
-            <span class="current-item">私たちについて</span>
+            <span class="current-item">ダイビング情報</span>
           </span>
           <!-- Breadcrumb NavXTで出力される部分 ここまで -->
         </div>
       </div>
     </div>
     <main>
-      <section class="dive-lower dive-lower-layout">
-        <div class="dive-lower__inner inner">
-          <div class="dive-lower__img-container">
-            <div class="dive-lower__img-main">
-              <img
-                src="./assets/images/common/ocean2.jpg"
-                alt="海の中に黄色い魚が二匹いる写真"
-              />
+      <section class="information-lower information-lower-layout">
+        <div class="information-lower__inner inner">
+          <div class="information-lower__tab tab-information">
+            <div class="tab-information__list">
+              <button class="tab-information__button js-tab-button is-active" data-number="tab01">ライセンス<br class="u-mobile">講習</button>
+              <button class="tab-information__button js-tab-button" data-number="tab02">ファン<br class="u-mobile">ダイビング</button>
+              <button class="tab-information__button js-tab-button" data-number="tab03">体験<br class="u-mobile">ダイビング</button>
             </div>
-            <div class="dive-lower__img-sub u-desktop">
-              <img src="./assets/images/common/ocean1.jpg" alt="沖縄の屋根" />
+            <div class="tab-information__contents">
+              <ul id="tab01" class="tab-information__contents-content js-tab-content is-active ">
+                <li class="tab-information__card">
+                  <div class="tab-information__container">
+                    <div class="tab-information__text-container">
+                      <p class="tab-information__title-sub">ライセンス講習</p>
+                      <p class="tab-information__text">
+                        泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします!スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう!
+                      </p>
+                    </div>
+                    <div class="tab-information__img">
+                      <picture>
+                        <source
+                        srcset="./assets/images/common/license-1-pc.jpg"
+                        media="(min-width: 768px)"
+                      />
+                        <img  src="./assets/images/common/license-1.jpg" alt="青く透き通った海で数名がシュノーケリングを楽しんでいる様子。リーフや珊瑚が確認できるクリアな水中の景色が広がっている。">
+                      </picture>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul id="tab02" class="tab-information__contents-content js-tab-content">
+                <li class="tab-information__card">
+                  <div class="tab-information__container">
+                    <div class="tab-information__text-container">
+                      <p class="tab-information__title-sub">ファンダイビング</p>
+                      <p class="tab-information__text">
+                        ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！!
+                      </p>
+                    </div>
+                    <div class="tab-information__img">
+                      <picture>
+                        <source
+                        srcset="./assets/images/common/license-2-pc.jpg"
+                        media="(min-width: 768px)"
+                      />
+                        <img  src="./assets/images/common/license-2.jpg" alt="青く透き通った海で数名がシュノーケリングを楽しんでいる様子。リーフや珊瑚が確認できるクリアな水中の景色が広がっている。">
+                      </picture>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul id="tab03" class="tab-information__contents-content js-tab-content">
+                <li class="tab-information__card">
+                  <div class="tab-information__container">
+                    <div class="tab-information__text-container">
+                      <p class="tab-information__title-sub">体験ダイビング</p>
+                      <p class="tab-information__text">
+                        ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+                      </p>
+                    </div>
+                    <div class="tab-information__img">
+                      <picture>
+                        <source
+                        srcset="./assets/images/common/license-3-pc.jpg"
+                        media="(min-width: 768px)"
+                      />
+                        <img  src="./assets/images/common/license-3.jpg" alt="青く透き通った海で数名がシュノーケリングを楽しんでいる様子。リーフや珊瑚が確認できるクリアな水中の景色が広がっている。">
+                      </picture>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="dive-lower__text-container">
-            <h3 class="dive-lower__text-container-title">
-              Dive into<br>
-              the Ocean
-            </h3>
-            <div class="dive-lower__container-sub">
-              <p class="dive-lower__container-subtext text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入り
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="gallery gallery-layout">
-        <div class="gallery__inner inner">
-          <div class="gallery__title title">
-            <p class="title__main">Gallery</p>
-            <h2 class="title__sub">フォト</h2>
-          </div>
-          <ul class="gallery__list gallery-list">
-            <li class="gallery-list__item">
-                <picture>
-                  <source
-                  srcset="./assets/images/common/gallery1-pc.jpg"
-                  media="(min-width: 768px)"
-                />
-                  <img  src="./assets/images/common/gallery1-sp.jpg" alt="サンゴ礁と小魚が集まる海底の風景">
-                </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery2-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery2-sp.jpg" alt="海に浮かぶ小さな家と青空">
-              </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery3-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery3-sp.jpg" alt="透明な水中で泳ぐカラフルな熱帯魚たち">
-              </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery4-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery4-sp.jpg" alt="黄色い魚が水中を泳いでいる様子">
-              </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery5-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery5-sp.jpg" alt="青い海の中で群れを成して泳ぐ小魚たち">
-              </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery6-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery6-sp.jpg" alt="サンゴとその周囲を泳ぐカラフルな魚たち">
-              </picture>
-            </li>
-          </ul>
-          <div id="grayDisplay" class="gallery-list__grayDisplay"></div>
         </div>
       </section>
 

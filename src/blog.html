@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initiascale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
@@ -203,15 +203,15 @@
     <div id="mv" class="mv-lower mv-lower--mask">
       <div class="mv-lower__inner">
         <div class="mv-lower__title">
-          <h1 class="mv-lower__title-main">About us</h1>
+          <h1 class="mv-lower__title-main">Blog</h1>
         </div>
         <div class="mv-lower__img">
           <picture>
             <source
-            srcset="./assets/images/common/about-lower.jpg"
+            srcset="./assets/images/common/blog-lower-pc.jpg"
             media="(min-width: 768px)"
           />
-            <img  src="./assets/images/common/about-lower-sp.jpg" alt="青空とシーサーが写っている写真">
+            <img  src="./assets/images/common/blog-lower-sp.jpg" alt="大群の魚が泳いでいる海中の写真。青い水中に無数の魚が一方向に泳いでいる様子が描かれている。">
           </picture>
         </div>
       </div>
@@ -229,104 +229,261 @@
             <img src="./assets/images/common/vecter-b.svg" alt=">">
           </div>
           <span>
-            <span class="current-item">私たちについて</span>
+            <span class="current-item">ブログ一覧</span>
           </span>
           <!-- Breadcrumb NavXTで出力される部分 ここまで -->
         </div>
       </div>
     </div>
     <main>
-      <section class="dive-lower dive-lower-layout">
-        <div class="dive-lower__inner inner">
-          <div class="dive-lower__img-container">
-            <div class="dive-lower__img-main">
-              <img
-                src="./assets/images/common/ocean2.jpg"
-                alt="海の中に黄色い魚が二匹いる写真"
-              />
+      <section class="blog-lower blog-lower-layout">
+        <div class="blog-lower__inner">
+          <div class="blog-lower__container">
+            <ul class="blog-lower__cards cards-lower-blog">
+              <li class="cards-lower-blog__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog1.jpg"
+                      alt="ピンクの珊瑚と海"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ライセンス取得</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-2.jpg"
+                      alt="海面近くを泳いでいるウミガメ。穏やかな表情で海の中を自由に泳いでいる姿。"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ウミガメと泳ぐ</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-3.jpg"
+                      alt="オレンジと白のクマノミがイソギンチャクの中で顔を出している様子。イソギンチャクの間に隠れて安全を確保している。"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">カクレクマノミ</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/gallery4-sp.jpg"
+                      alt="黄色い魚が水中を泳いでいる様子"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ライセンス取得</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-5.jpg"
+                      alt="砂の上にいる白と黒の模様が特徴的なウミウシ。砂地の海底でゆっくりと動いている様子が見える。"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ウミウシと泳ぐ</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-6.jpg"
+                      alt="青い光に照らされて漂う複数のクラゲ。透明な体が光を受けて幻想的に浮かんでいる"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">クラゲと泳ぐ</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-3.jpg"
+                      alt="オレンジと白のクマノミがイソギンチャクの中で顔を出している様子。イソギンチャクの間に隠れて安全を確保している。"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">カクレクマノミ</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/gallery4-sp.jpg"
+                      alt="黄色い魚が水中を泳いでいる様子"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ライセンス取得</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-5.jpg"
+                      alt="砂の上にいる白と黒の模様が特徴的なウミウシ。砂地の海底でゆっくりと動いている様子が見える。"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">ウミウシと泳ぐ</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards__card card">
+                <a href="#" class="card__container">
+                  <div class="card__content">
+                    <img
+                      src="./assets/images/common/blog-6.jpg"
+                      alt="青い光に照らされて漂う複数のクラゲ。透明な体が光を受けて幻想的に浮かんでいる"
+                    />
+                  </div>
+                  <div class="card__block">
+                    <time datetime="2023-11-17" class="card__block-date"
+                      >2023.11/17</time
+                    >
+                    <p class="card__block-title">クラゲと泳ぐ</p>
+                    <p class="card__block-subtext">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="blog-lower__pagenavi pagenavi">
+              <div class="pagenavi__inner">
+                <!-- WP-PageNaviで出力される部分 ここから -->
+                <div class='wp-pagenavi' role='navigation'>
+                  <a class="previouspostslink" rel="prev" href="#"></a>
+                  <span class="current">1</span>
+                  <a class="page larger" href="#">2</a>
+                  <a class="page larger" href="#">3</a>
+                  <a class="page larger" href="#">4</a>
+                  <a class="page larger u-desktop" href="#">5</a>
+                  <a class="page larger u-desktop" href="#">6</a>
+                  <a class="nextpostslink" rel="next" href="#"></a>
+                </div>
+                <!-- WP-PageNaviで出力される部分 ここまで -->
+              </div>
             </div>
-            <div class="dive-lower__img-sub u-desktop">
-              <img src="./assets/images/common/ocean1.jpg" alt="沖縄の屋根" />
+          <section class="blog-lower__sideber-container">
+            <div class="blog-lower__sideber-inner">
+              <div class="blog-lower__slideber-title title-slideber">
+                <h3 class="title-slideber__main">人気記事</h3>
+              </div>
+              <div class="blog-lower__article-cards cards-article">
+                <div class="cards-article__card card-article">
+                  <a class="card-article__container">
+                    <div class="card-article__img">
+                      <img
+                        src="./assets/images/common/gallery4-sp.jpg"
+                        alt="黄色い魚が水中を泳いでいる様子"
+                      />
+                    </div>
+                    <div class="card-article__text-box">
+                      <time datetime="2023-11-17" class="card-article__date"
+                      >2023.11/17</time>
+                      <p class="card-article__title">ライセンス取得</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="dive-lower__text-container">
-            <h3 class="dive-lower__text-container-title">
-              Dive into<br>
-              the Ocean
-            </h3>
-            <div class="dive-lower__container-sub">
-              <p class="dive-lower__container-subtext text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入り
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
-      <section class="gallery gallery-layout">
-        <div class="gallery__inner inner">
-          <div class="gallery__title title">
-            <p class="title__main">Gallery</p>
-            <h2 class="title__sub">フォト</h2>
-          </div>
-          <ul class="gallery__list gallery-list">
-            <li class="gallery-list__item">
-                <picture>
-                  <source
-                  srcset="./assets/images/common/gallery1-pc.jpg"
-                  media="(min-width: 768px)"
-                />
-                  <img  src="./assets/images/common/gallery1-sp.jpg" alt="サンゴ礁と小魚が集まる海底の風景">
-                </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery2-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery2-sp.jpg" alt="海に浮かぶ小さな家と青空">
-              </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery3-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery3-sp.jpg" alt="透明な水中で泳ぐカラフルな熱帯魚たち">
-              </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery4-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery4-sp.jpg" alt="黄色い魚が水中を泳いでいる様子">
-              </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery5-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery5-sp.jpg" alt="青い海の中で群れを成して泳ぐ小魚たち">
-              </picture>
-            </li>
-            <li class="gallery-list__item">
-              <picture>
-                <source
-                srcset="./assets/images/common/gallery6-pc.jpg"
-                media="(min-width: 768px)"
-              />
-                <img  src="./assets/images/common/gallery6-sp.jpg" alt="サンゴとその周囲を泳ぐカラフルな魚たち">
-              </picture>
-            </li>
-          </ul>
-          <div id="grayDisplay" class="gallery-list__grayDisplay"></div>
-        </div>
-      </section>
+      </div>
+    </section>
 
       <section class="contact-lower contact-lower-layout">
         <div class="contact-lower__inner inner">
