@@ -80,4 +80,37 @@
     }
 }
 
+.title-slideber {
+        position:relative;
+    }
 
+.title-slideber__container {
+    display: flex;
+    align-items: center;
+    gap: rem(15);
+}
+
+.title-slideber__container-img {
+    display: flex;
+    align-items: center;
+}
+
+.title-slideber__container-img-ber {
+    display: flex;
+    align-items: center;
+    width:rem(8);
+    height:rem(80);
+}
+
+.title-slideber__container-img-fish {
+    display:inline-block;
+    width:rem(40);
+    height:rem(35);
+}
+
+.title-slideber__main {
+    font-size: rem(24);
+    font-family: $base-font-family;
+    line-height: 1.4584;
+    font-weight: $normal;
+}
