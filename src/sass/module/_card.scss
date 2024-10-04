@@ -193,9 +193,6 @@
 
 .card-article__img {
     width: 100%;
-    @include mq("md") {
-        width: rem(121);
-    }
 }
 
 .card-article__img img {
@@ -227,3 +224,34 @@
     line-height: 1.4375;
 }
 
+.card-review__img {
+    width: 100%;
+    @include mq("md") {
+        width: rem(294);
+    }
+}
+
+.card-areview_img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 294 / 218 ;
+    object-fit: cover;
+}
+
+.card-reviews__profile {
+    font-family: $base-font-family;
+    font-weight: $normal;
+    font-size: rem(12);
+    line-height: 1.5;
+    color: $blue;
+    margin-top: rem(16);
+}
+
+.card-reviews__text {
+    font-family: $base-font-family;
+    font-weight: $medium;
+    font-size: rem(24);
+    line-height: 1.4583;
+    color: $blue;
+    margin-top: rem(8);
+}

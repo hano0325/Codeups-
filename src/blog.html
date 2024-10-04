@@ -86,7 +86,7 @@
           </li>
           <li class="header__nav-item">
             <a href="" class="header__nav-link"
-              ><span>contact-lower</span>お問い合わせ</a
+              ><span>contact</span>お問い合わせ</a
             >
           </li>
         </ul>
@@ -442,90 +442,227 @@
               </li>
             </ul>
           </div>
+          <div class="blog-lower__pagenavi pagenavi">
+            <div class="pagenavi__inner">
+              <!-- WP-PageNaviで出力される部分 ここから -->
+              <div class='wp-pagenavi' role='navigation'>
+                <a class="previouspostslink" rel="prev" href="#"></a>
+                <span class="current">1</span>
+                <a class="page larger" href="#">2</a>
+                <a class="page larger" href="#">3</a>
+                <a class="page larger" href="#">4</a>
+                <a class="page larger u-desktop" href="#">5</a>
+                <a class="page larger u-desktop" href="#">6</a>
+                <a class="nextpostslink" rel="next" href="#"></a>
+              </div>
+              <!-- WP-PageNaviで出力される部分 ここまで -->
+            </div>
+          </div>
         </div>
-      </section>
-            <div class="blog-lower__pagenavi pagenavi">
-              <div class="pagenavi__inner">
-                <!-- WP-PageNaviで出力される部分 ここから -->
-                <div class='wp-pagenavi' role='navigation'>
-                  <a class="previouspostslink" rel="prev" href="#"></a>
-                  <span class="current">1</span>
-                  <a class="page larger" href="#">2</a>
-                  <a class="page larger" href="#">3</a>
-                  <a class="page larger" href="#">4</a>
-                  <a class="page larger u-desktop" href="#">5</a>
-                  <a class="page larger u-desktop" href="#">6</a>
-                  <a class="nextpostslink" rel="next" href="#"></a>
+        <aside class="blog-lower-slideber blog-lower-slideber-layout">
+          <div class="blog-lower-slideber__inner">
+            <div class="blog-lower-slideber__title title-side">
+              <div class="title-side__container">
+                <div class="title-side__container-img-ber">
+                  <img src="./assets/images/common/title-ber.svg" alt="|">
                 </div>
-                <!-- WP-PageNaviで出力される部分 ここまで -->
+                <div class="title-side__container-img-fish">
+                  <img src="./assets/images/common/fish-title.svg" alt="">
+                </div>
+                <h3 class="title-side__main">人気記事</h3>
               </div>
             </div>
-          <section class="blog-lower__slideber">
-            <div class="blog-lower__slideber-inner">
-              <div class="blog-lower__slideber-title title-slideber">
-                <div class="title-slideber__container">
-                  <div class="title-slideber__container-img-ber">
+            <ul class="blog-lower-slideber__article-cards cards-article">
+              <li class="cards-article__card card-article">
+                <a class="card-article__container">
+                  <div class="card-article__img">
+                    <img
+                      src="./assets/images/common/gallery4-sp.jpg"
+                      alt="黄色い魚が水中を泳いでいる様子"
+                    />
+                  </div>
+                  <div class="card-article__text-box">
+                    <time datetime="2023-11-17" class="card-article__date"
+                    >2023.11/17</time>
+                    <p class="card-article__title">ライセンス取得</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-article__card card-article">
+                <a class="card-article__container">
+                  <div class="card-article__img">
+                    <img
+                    src="./assets/images/common/blog-2.jpg"
+                    alt="海面近くを泳いでいるウミガメ。穏やかな表情で海の中を自由に泳いでいる姿。"
+                    />
+                  </div>
+                  <div class="card-article__text-box">
+                    <time datetime="2023-11-17" class="card-article__date"
+                    >2023.11/17</time>
+                    <p class="card-article__title">ライセンス取得</p>
+                  </div>
+                </a>
+              </li>
+              <div class="cards-article__card card-article">
+                <a class="card-article__container">
+                  <div class="card-article__img">
+                    <img
+                    src="./assets/images/common/blog-3.jpg"
+                    alt="オレンジと白のクマノミがイソギンチャクの中で顔を出している様子。イソギンチャクの間に隠れて安全を確保している。"
+                    />
+                  </div>
+                  <div class="card-article__text-box">
+                    <time datetime="2023-11-17" class="card-article__date"
+                    >2023.11/17</time>
+                    <p class="card-article__title">ライセンス取得</p>
+                  </div>
+                </a>
+              </div>
+            </ul>
+          </div>
+          <div class="blog-lower-reviews blog-lower-reviews-layout">
+            <div class="blog-lower-reviews__inner">
+              <div class="blog-lower-reviews__title title-side">
+                <div class="title-side__container">
+                  <div class="title-side__container-img-ber">
                     <img src="./assets/images/common/title-ber.svg" alt="|">
                   </div>
-                  <div class="title-slideber__container-img-fish">
+                  <div class="title-side__container-img-fish">
                     <img src="./assets/images/common/fish-title.svg" alt="">
                   </div>
-                  <h3 class="title-slideber__main">人気記事</h3>
+                  <h3 class="title-side__main">口コミ</h3>
                 </div>
               </div>
-              <div class="blog-lower__article-cards cards-article">
-                <div class="cards-article__card card-article">
-                  <a class="card-article__container">
-                    <div class="card-article__img">
+              <ul class="blog-lower-reviews__cards cards-reviews">
+                <li class="cards-reviews__card card-reviews">
+                  <a class="card-reviews__container">
+                    <div class="card-reviews__img">
                       <img
-                        src="./assets/images/common/gallery4-sp.jpg"
+                        src="./assets/images/common/review.jpg"
                         alt="黄色い魚が水中を泳いでいる様子"
                       />
                     </div>
-                    <div class="card-article__text-box">
-                      <time datetime="2023-11-17" class="card-article__date"
-                      >2023.11/17</time>
-                      <p class="card-article__title">ライセンス取得</p>
+                    <div class="card-reviews__text-box">
+                      <div class="card-reviews__profile">30代(カップル)</div>
+                      <p class="card-reviews__text">ここにタイトルが入ります。ここにタイトル</p>
                     </div>
                   </a>
-                </div>
-                <div class="blog-lower__article-cards cards-article">
-                  <div class="cards-article__card card-article">
-                    <a class="card-article__container">
-                      <div class="card-article__img">
-                        <img
-                        src="./assets/images/common/blog-2.jpg"
-                        alt="海面近くを泳いでいるウミガメ。穏やかな表情で海の中を自由に泳いでいる姿。"
-                        />
-                      </div>
-                      <div class="card-article__text-box">
-                        <time datetime="2023-11-17" class="card-article__date"
-                        >2023.11/17</time>
-                        <p class="card-article__title">ライセンス取得</p>
-                      </div>
-                    </a>
+                </li>
+              </ul>
+              <div class="blog-lower-reviews__button">
+                <a href="#" class="button">
+                  <div class="button__container">
+                    <p>View more</p>
+                    <img
+                      src="./assets/images/common/Vector.png"
+                      alt=""
+                      class="button__arrow"
+                    />
                   </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <aside class="blog-lower-campaign blog-lower-campaign-layout">
+            <div class="blog-lower-campaign__inner">
+              <div class="blog-lower-campaign__title title-side">
+                <div class="title-side__container">
+                  <div class="title-side__container-img-ber">
+                    <img src="./assets/images/common/title-ber.svg" alt="|">
+                  </div>
+                  <div class="title-side__container-img-fish">
+                    <img src="./assets/images/common/fish-title.svg" alt="">
+                  </div>
+                  <h3 class="title-side__main">キャンペーン</h3>
                 </div>
-                <div class="blog-lower__article-cards cards-article">
-                  <div class="cards-article__card card-article">
-                    <a class="card-article__container">
-                      <div class="card-article__img">
+              </div>
+              <div class="blog-lower-campaign__tab">
+                <div class="blog-lower-campaign__contents">
+                  <ul class="blog-lower-campaign__contents-content is-active js-tab-content">
+                    <li class="blog-lower-campaign__card">
+                      <div class="blog-lower-campaign__container">
+                        <div class="blog-lower-campaign__img">
+                          <img
+                            src="./assets/images/common/campaign1.jpg"
+                            alt="海の中に複数の魚がいる写真"
+                          />
+                        </div>
+                        <div class="blog-lower-campaign__container-text">
+                          <div class="blog-lower-campaign__text-box">
+                            <p
+                              class="blog-lower-campaign__text-box-maintitle"
+                            >
+                              ライセンス講習
+                            </p>
+                            <p class="blog-lower-campaign__text-box-subtitle">
+                              ライセンス講習
+                            </p>
+                          </div>
+                            <div class="blog-lower-campaign__money">
+                              <p class="blog-lower-campaign__money-title">
+                                全部コミコミ(お一人様)
+                              </p>
+                              <div class="blog-lower-campaign__fee">
+                                <p class="blog-lower-campaign__discount">¥56,000</p>
+                                <p class="blog-lower-campaign__main">¥46,000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="blog-lower-reviews__button">
+                    <a href="#" class="button">
+                      <div class="button__container">
+                        <p>View more</p>
                         <img
-                        src="./assets/images/common/blog-3.jpg"
-                        alt="オレンジと白のクマノミがイソギンチャクの中で顔を出している様子。イソギンチャクの間に隠れて安全を確保している。"
+                        src="./assets/images/common/Vector.png"
+                        alt=""
+                        class="button__arrow"
                         />
-                      </div>
-                      <div class="card-article__text-box">
-                        <time datetime="2023-11-17" class="card-article__date"
-                        >2023.11/17</time>
-                        <p class="card-article__title">ライセンス取得</p>
                       </div>
                     </a>
                   </div>
                 </div>
               </div>
-            </div>
-    </section>
+            </aside>
+            <aside class="blog-lower-archive blog-lower-archive-layout">
+              <div class="blog-lower-archive__inner">
+                <div class="blog-lower-archive__title title-side">
+                  <div class="title-side__container">
+                    <div class="title-side__container-img-ber">
+                      <img src="./assets/images/common/title-ber.svg" alt="|">
+                    </div>
+                    <div class="title-side__container-img-fish">
+                      <img src="./assets/images/common/fish-title.svg" alt="">
+                    </div>
+                    <h3 class="title-side__main">アーカイブ</h3>
+                  </div>
+                </div>
+                <div class="blog-lower-archive__container archive">
+                  <ul class="archive-list">
+                    <li class="archive-list__item">
+                      <button class="archive-list__year is-active" aria-expanded="true">
+                        2023
+                      </button>
+                      <ul class="archive-list__months">
+                        <li class="archive-list__month">1月</li>
+                        <li class="archive-list__month">2月</li>
+                        <li class="archive-list__month">3月</li>
+                      </ul>
+                    </li>
+                    <li class="archive-list__item">
+                      <button class="archive-list__year" aria-expanded="false">
+                        2022
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </aside>
+        </section>
 
       <section class="contact-lower contact-lower-layout">
         <div class="contact-lower__inner inner">

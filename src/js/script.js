@@ -173,3 +173,15 @@ box.each(function(){
       $("#grayDisplay").fadeOut(200);
       return false;
     });
+
+    document.querySelectorAll('.archive-list__year').forEach(toggleButton => {
+      toggleButton.addEventListener('click', () => {
+        const monthsList = toggleButton.nextElementSibling;
+        const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+    
+        toggleButton.setAttribute('aria-expanded', !isExpanded);
+        monthsList.hidden = isExpanded;
+        toggleButton.classList.toggle('is-active');
+      });
+    });
+    

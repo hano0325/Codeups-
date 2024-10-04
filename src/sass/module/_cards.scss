@@ -30,7 +30,15 @@
   }
 }
 
-.cards-article__card {
+.cards-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(24);
+}
+
+.cards-reviews {
   display: flex;
   flex-direction: column;
   justify-content: center;

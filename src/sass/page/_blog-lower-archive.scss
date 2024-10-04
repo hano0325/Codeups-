@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.blog-lower-archive__inner {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 rem(40);
+    @include mq("md") {
+        max-width: rem(340);
+    }
+}
+
+.blog-lower-archive__container {
+    margin-top: rem(24);
+}
