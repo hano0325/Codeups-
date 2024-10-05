@@ -255,3 +255,83 @@
     color: $blue;
     margin-top: rem(8);
 }
+
+.card-lower-detail__date {
+    font-family: $Gotu-font;
+    font-weight: $normal;
+    color: $blue;
+    font-size: rem(14);
+    line-height: 1.2857;
+}
+
+.card-lower-detail__title {
+    color: $blue;
+    font-family: $base-font-family;
+    font-weight: $medium;
+    font-size: rem(24);
+    line-height: 1.4584;
+    padding-bottom: rem(4);
+    border-bottom: 1px solid $lightblue;
+    margin-top: rem(8);
+    @include mq("md") {
+        font-size: rem(32);
+        line-height: 1.4375;
+        padding-bottom: 0;
+    }
+}
+
+.card-lower-detail__img {
+    width: 100%;
+}
+
+.card-lower-detail__img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 345 / 231;
+    margin-top: rem(24);
+    object-fit: cover;
+    @include mq("md") {
+        margin-top: rem(40);
+        aspect-ratio: 700 / 468;
+    }
+}
+
+.card-lower-detail__main-text,
+.card-lower-detail__sub-text,
+.card-lower-detail__content-list-text,
+.card-lower-detail__content-list-items {
+    font-size: rem(16);
+    line-height: 1.5;
+    font-family: $base-font-family;
+    font-weight: $normal;
+    color: $blue;
+    margin-top: rem(24);
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+.card-lower-detail__content-list-item {
+    padding-left: rem(21);
+    position: relative;
+}
+
+.card-lower-detail__content-list-item:not(:first-child) {
+    margin-top: rem(4);
+}
+
+.card-lower-detail__content-list-item::before {
+    position: absolute;
+    content: url(../images/common/hitode-blue.svg);
+    left: rem(-0.25);
+    top: 12%;
+}
+
+
+.card-lower-detail__content-list-text {
+    margin-top: rem(24);
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
