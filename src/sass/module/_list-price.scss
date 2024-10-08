@@ -1,0 +1,68 @@
+@use "global" as *;
+
+
+.list-price {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.list-price__title {
+    position: relative;
+    background-color: $lightblue;
+    color: $white;
+    line-height: 1.5;
+    font-size: rem(16);
+    font-weight: $bold;
+    font-family: $base-font-family;
+    align-items: center;
+    justify-content: center;
+    padding-right: rem(50);
+    padding-left: rem(50);
+    margin-left: rem(50);
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+}
+
+.list-price__title::before {
+    position: absolute;
+    content: url(../images/common/fish-white.svg);
+    left: calc(50% - min(48vw, 6.5rem));
+    z-index: 100;
+}
+
+.list-price__date,
+.list-price__price {
+    border: 1px solid $lightblue;
+}
+
+.list-price__date {
+    width: 71%;
+    color: $blue;
+    line-height: 1.5;
+    font-size: rem(16);
+    font-weight: $normal;
+    font-family: $base-font-family;
+    padding-top: rem(6);
+    padding-bottom: rem(6);
+    padding-right: rem(25);
+    padding-left: rem(25);
+    text-align: center;
+}
+
+.list-price__price {
+    color: $blue;
+    line-height: 1.5;
+    font-size: rem(16);
+    font-weight: $normal;
+    font-family: $base-font-family;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    padding-right: rem(16);
+    padding-left: rem(20);
+    text-align: right;
+}
+
+
+
