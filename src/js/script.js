@@ -174,6 +174,8 @@ box.each(function(){
       return false;
     });
 
+  
+    // アーカイブのトグル
     document.querySelectorAll('.archive-list__year').forEach(toggleButton => {
       toggleButton.addEventListener('click', () => {
         const monthsList = toggleButton.nextElementSibling;
@@ -185,3 +187,13 @@ box.each(function(){
       });
     });
     
+    $(document).ready(function () {
+      // 初期状態で最初の質問を開く
+      $('.js-faq-question').first().addClass('is-active').next().show();
+    
+      // クリックイベントでトグル
+      $('.js-faq-question').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('is-active');
+      });
+    });

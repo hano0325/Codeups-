@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.price-lower-layout {
+.faq-lower-layout {
     position: relative;
     margin-top: rem(52);
     @include mq("md") {
@@ -8,7 +8,7 @@
     }
 }
 
-.price-lower-layout::before {
+.faq-lower-layout::before {
     background-image: url(../images/common/fish-blue-left.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -19,13 +19,13 @@
     z-index: 100;
     display: inline-block;
     left: calc(50% - min(48vw, 11rem));
-    top: -9.5%;
+    top: -42%;
+    z-index: -100;
     @include mq("md") {
         width: rem(301);
         height: rem(138);
-        z-index: -100;
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: -7%;
+        top: -95%;
     }
 }
