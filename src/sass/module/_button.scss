@@ -85,3 +85,32 @@
         background-color: transparent;
     }
 }
+
+.button--white {
+    z-index: 1;
+    color: $lightblue;
+    background-color: $white;
+    border: solid 1px $white;
+}
+
+.button--white::before {
+    content: "";
+    position: absolute;
+    text-align: right;
+    background-color: transparent;
+    border: solid 1px $white;
+    z-index: -1;
+}
+
+.button--white::after {
+    background-color: $lightblue;
+}
+
+
+.button--white:hover p{
+    color: $white;
+}
+
+.button--white:hover img {
+    content: url(../images/common/Vector.png);
+}

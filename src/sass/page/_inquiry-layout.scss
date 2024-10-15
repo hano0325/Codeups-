@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.faq-lower-layout {
+.inquiry-layout {
     position: relative;
     margin-top: rem(52);
     @include mq("md") {
-        margin-top: rem(156);
+        margin-top: rem(140);
     }
 }
 
-.faq-lower-layout::before {
+.inquiry-layout::before {
     background-image: url(../images/common/fish-blue-left.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -19,7 +19,7 @@
     z-index: 100;
     display: inline-block;
     left: calc(50% - min(48vw, 11rem));
-    top: -1%;
+    top: -3%;
     z-index: -100;
     @include mq("md") {
         width: rem(301);

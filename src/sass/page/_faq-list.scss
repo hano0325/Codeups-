@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .faq-list__item:not(:first-child){
-    margin-top: rem(20);
+    margin-top: rem(40);
 }
 
 .faq-list__item-question {
@@ -56,18 +56,22 @@
 }
 
 .faq-list__item-answer {
-    padding-top: rem(40);
-    padding-right: rem(40);
-    padding-bottom: rem(40);
-    padding-left: rem(40);
+    padding-top: rem(24);
+    padding-right: rem(16);
+    padding-bottom: rem(24);
+    padding-left: rem(16);
     display: none;
-    font-size: rem(15);
-    text-indent: rem(-20);
+    font-size: rem(16);
+    line-height: 1.4375;
+    font-weight: $normal;
+    font-family: $base-font-family;
+    border: 1px solid $lightblue;
+    color: $blue;
     @include mq(md){
         padding-top: rem(40);
         padding-right: rem(40);
         padding-bottom: rem(40);
         padding-left: rem(40);
-        font-size: rem(18);
+        margin-top: rem(16);
     }
 }

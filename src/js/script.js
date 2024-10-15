@@ -189,7 +189,7 @@ box.each(function(){
     
     $(document).ready(function () {
       // 初期状態で最初の質問を開く
-      $('.js-faq-question').first().addClass('is-active').next().show();
+      $('.js-faq-question').addClass().next().show();
     
       // クリックイベントでトグル
       $('.js-faq-question').on('click', function () {
@@ -197,3 +197,27 @@ box.each(function(){
         $(this).toggleClass('is-active');
       });
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      // 最初のチェックボックスに自動でチェックを入れる
+      const firstCheckbox = document.querySelector(".form__checkbox input[type='checkbox']");
+      if (firstCheckbox) {
+        firstCheckbox.checked = true;
+      }
+  
+      // すべてのチェックボックスを取得
+      const checkboxes = document.querySelectorAll('.form__checkbox input[type="checkbox"]');
+  
+      // 各チェックボックスにイベントリスナーを追加
+      checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+          // 現在チェックされたチェックボックス以外のチェックを外す
+          checkboxes.forEach(function(box) {
+            if (box !== checkbox) {
+              box.checked = false;
+            }
+          });
+        });
+      });
+    });
+

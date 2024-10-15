@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.faq-lower-layout {
+.thanks-page-layout {
     position: relative;
-    margin-top: rem(52);
-    @include mq("md") {
-        margin-top: rem(156);
-    }
+        margin-top: rem(52);
+        @include mq("md") {
+            margin-top: rem(150);
+        }
 }
 
-.faq-lower-layout::before {
+.thanks-page-layout::before {
     background-image: url(../images/common/fish-blue-left.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -16,16 +16,17 @@
     width: rem(120);
     height: rem(55);
     position: absolute;
-    z-index: 100;
+    z-index: -100;
     display: inline-block;
     left: calc(50% - min(48vw, 11rem));
-    top: -1%;
-    z-index: -100;
+    top: -1.2%;
     @include mq("md") {
         width: rem(301);
         height: rem(138);
+        position: absolute;
+        z-index: -100;
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: -3.5%;
+        top: -4.5%;
     }
-}
+    }

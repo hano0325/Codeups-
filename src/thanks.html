@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initiascale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
@@ -203,15 +203,18 @@
     <div id="mv" class="mv-lower mv-lower--mask">
       <div class="mv-lower__inner">
         <div class="mv-lower__title">
-          <h1 class="mv-lower__title-main">Information</h1>
+          <h1 class="mv-lower__title-main">Contact</h1>
         </div>
         <div class="mv-lower__img">
           <picture>
             <source
-            srcset="./assets/images/common/information-lower.jpg"
-            media="(min-width: 768px)"
-          />
-            <img  src="./assets/images/common/information-sp.jpg" alt="ダイビング中のダイバーとサンゴ礁の周りに泳ぐカラフルな魚たちの風景">
+              srcset="./assets/images/common/contact-pc.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./assets/images/common/contact-sp.jpg"
+              alt="海と砂が広がっている写真"
+            />
           </picture>
         </div>
       </div>
@@ -229,156 +232,29 @@
             <img src="./assets/images/common/vecter-b.svg" alt=">">
           </div>
           <span>
-            <span class="current-item">ダイビング情報</span>
+            <span class="current-item">お問い合わせ</span>
+          </span>
+          <div class="breadcrumb__vecter">
+            <img src="./assets/images/common/vecter-b.svg" alt=">">
+          </div>
+          <span>
+            <span class="current-item">送信完了</span>
           </span>
           <!-- Breadcrumb NavXTで出力される部分 ここまで -->
         </div>
       </div>
     </div>
-    <main>
-      <section class="information-lower information-lower-layout">
-        <div class="information-lower__inner inner">
-          <div class="information-lower__tab tab-information">
-            <div class="tab-information__list">
-              <button class="tab-information__button js-tab-button is-active" data-number="tab01">ライセンス<br class="u-mobile">講習</button>
-              <button class="tab-information__button js-tab-button" data-number="tab02">ファン<br class="u-mobile">ダイビング</button>
-              <button class="tab-information__button js-tab-button" data-number="tab03">体験<br class="u-mobile">ダイビング</button>
-            </div>
-            <div class="tab-information__contents">
-              <ul id="tab01" class="tab-information__contents-content js-tab-content is-active ">
-                <li class="tab-information__card">
-                  <div class="tab-information__container">
-                    <div class="tab-information__text-container">
-                      <p class="tab-information__title-sub">ライセンス講習</p>
-                      <p class="tab-information__text">
-                        泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします!スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう!
-                      </p>
-                    </div>
-                    <div class="tab-information__img">
-                      <picture>
-                        <source
-                        srcset="./assets/images/common/license-1-pc.jpg"
-                        media="(min-width: 768px)"
-                      />
-                        <img  src="./assets/images/common/license-1.jpg" alt="青く透き通った海で数名がシュノーケリングを楽しんでいる様子。リーフや珊瑚が確認できるクリアな水中の景色が広がっている。">
-                      </picture>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <ul id="tab02" class="tab-information__contents-content js-tab-content">
-                <li class="tab-information__card">
-                  <div class="tab-information__container">
-                    <div class="tab-information__text-container">
-                      <p class="tab-information__title-sub">ファンダイビング</p>
-                      <p class="tab-information__text">
-                        ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！!
-                      </p>
-                    </div>
-                    <div class="tab-information__img">
-                      <picture>
-                        <source
-                        srcset="./assets/images/common/license-2-pc.jpg"
-                        media="(min-width: 768px)"
-                      />
-                        <img  src="./assets/images/common/license-2.jpg" alt="青く透き通った海で数名がシュノーケリングを楽しんでいる様子。リーフや珊瑚が確認できるクリアな水中の景色が広がっている。">
-                      </picture>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <ul id="tab03" class="tab-information__contents-content js-tab-content">
-                <li class="tab-information__card">
-                  <div class="tab-information__container">
-                    <div class="tab-information__text-container">
-                      <p class="tab-information__title-sub">体験ダイビング</p>
-                      <p class="tab-information__text">
-                        ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
-                      </p>
-                    </div>
-                    <div class="tab-information__img">
-                      <picture>
-                        <source
-                        srcset="./assets/images/common/license-3-pc.jpg"
-                        media="(min-width: 768px)"
-                      />
-                        <img  src="./assets/images/common/license-3.jpg" alt="青く透き通った海で数名がシュノーケリングを楽しんでいる様子。リーフや珊瑚が確認できるクリアな水中の景色が広がっている。">
-                      </picture>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+    <div class="main">
+      <div class="thanks-page thanks-page-layout">
+        <div class="thanks-page__inner inner">
+          <div class="thanks-page__text">
+            <p class="thanks-page__text-main">お問い合わせ内容を送信完了しました。</p>
+            <p class="thanks-page__text-sub">このたびは、お問い合わせ頂き<br class="u-mobile">誠にありがとうございます。<br>お送り頂きました内容を確認の上、<br class="u-mobile">3営業日以内に折り返しご連絡させて頂きます。<br class="u-desktop">また、ご記入頂いたメールアドレスへ、<br class="u-mobile">自動返信の確認メールをお送りしております。</p>
           </div>
         </div>
-      </section>
-      <section class="contact-lower contact-lower-layout">
-        <div class="contact-lower__inner inner">
-          <ul class="contact-lower__card">
-            <div class="contact-lower__container">
-              <div class="contact-lower__container-main">
-                <div class="contact-lower__title-img">
-                  <img
-                    src="./assets/images/common/CodeUps-img.png"
-                    alt="Codeups"
-                  />
-                </div>
-                <div class="contact-lower__address-container">
-                  <ul class="contact-lower__address">
-                    <li class="contact-lower__address-item">沖縄県那覇市1-1</li>
-                    <li class="contact-lower__address-item">TEL:0120-000-0000</li>
-                    <li class="contact-lower__address-item">営業時間:8:30-19:00</li>
-                    <li class="contact-lower__address-item">定休日:毎週火曜日</li>
-                  </ul>
-                  <div class="contact-lower__map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.085776856419!2d-157.89591742652453!3d21.347111580383007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006f441fbd3ef9%3A0x19d1808be9dbf05!2z5pel56uL44Gu5qi577yIVGhlIEhpdGFjaGkgVHJlZe-8iQ!5e0!3m2!1sja!2sjp!4v1724830564067!5m2!1sja!2sjp"
-                      width="273"
-                      height="200"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.085776856419!2d-157.89591742652453!3d21.347111580383007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006f441fbd3ef9%3A0x19d1808be9dbf05!2z5pel56uL44Gu5qi577yIVGhlIEhpdGFjaGkgVHJlZe-8iQ!5e0!3m2!1sja!2sjp!4v1724830564067!5m2!1sja!2sjp"
-                      width="295"
-                      height="200"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-              <div class="contact-lower__container-sub">
-                <div class="contact-lower__title title">
-                  <h2 class="title__main title__main--big">Contact</h2>
-                  <p class="title__sub title__sub--small">お問い合わせ</p>
-                </div>
-                <div class="contact-lower__form-container">
-                  <p class="contact-lower__form-text">ご予約・お問い合わせはコチラ</p>
-                  <div class="contact-lower__form-button">
-                    <a href="#" class="button">
-                      <div class="button__container">
-                        <p>Contact us</p>
-                        <img
-                          src="./assets/images/common/Vector.png"
-                          alt="矢印"
-                          class="button__arrow"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ul>
-        </div>
-      </section>
+      </div>
       <div class="cycle-button js-page-top"></div>
-    </main>
+    </div>
     <footer class="footer footer-layout">
       <div class="footer__nav-inner inner">
         <div class="footer__nav-container">

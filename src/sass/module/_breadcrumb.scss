@@ -25,6 +25,8 @@
     height: rem(8);
 }
 
+
+
 .breadcrumb span {
     font-size: rem(14);
     line-height: 1.429;
@@ -32,4 +34,12 @@
     font-family: $base-font-family;
     font-weight: $normal;
     cursor: pointer;
+}
+
+.breadcrumb--green {
+    background-color: $lightblue;
+}
+
+.breadcrumb--white span {
+    color: $white;
 }

@@ -1,5 +1,13 @@
 @use "global" as *;
 
+.footer {
+    background-color: $lightblue;
+    padding-bottom: rem(55);
+@include mq("md") {
+padding-bottom: rem(80);
+ }
+}
+
 .footer__nav-container {
     @include mq("md") {
         display: flex;
