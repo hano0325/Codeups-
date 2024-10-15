@@ -2,9 +2,9 @@
 
 .dive-lower-layout {
     position: relative;
-    margin-top: rem(52);
+    margin-top: 0;
     @include mq("md") {
-        margin-top: rem(230);
+        margin-top: rem(100);
     }
 }
 
@@ -19,7 +19,7 @@
     z-index: 100;
     display: inline-block;
     left: calc(50% - min(48vw, 11rem));
-    top: -8.2%;
+    top: 5.8%;
     @include mq("md") {
         width: rem(301);
         height: rem(138);
@@ -27,7 +27,7 @@
         z-index: -100;
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: -25.5%;
+        top: -2.5%;
     }
 }
 
