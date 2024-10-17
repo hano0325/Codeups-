@@ -42,10 +42,6 @@
 
 .sentence__item {
     margin-top: rem(20);
-    padding-bottom: rem(20);
-    @include mq(md){
-        padding-bottom: rem(40);
-    }
 }
 
 .sentence__description-number {
