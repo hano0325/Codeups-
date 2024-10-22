@@ -99,7 +99,8 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 input[type="submit"],
@@ -108,6 +109,12 @@ label,
 button,
 select {
   cursor: pointer;
+}
+
+input[type="radio"]:focus-visible + .radio-circle,
+input[type="checkbox"]:focus-visible {
+  position: absolute;
+  opacity: 0;
 }
 
 select::-ms-expand {

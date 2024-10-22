@@ -37,8 +37,8 @@
     background: $white;
     transition:all .3s;
     @include mq(md){
-        top: rem(32);
-        right: rem(40);
+        top: rem(40);
+        right: rem(24);
     }
 }
 
