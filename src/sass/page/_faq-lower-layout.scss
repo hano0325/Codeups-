@@ -19,13 +19,12 @@
     z-index: 100;
     display: inline-block;
     left: calc(50% - min(48vw, 11rem));
-    top: -1%;
     z-index: -100;
     @include mq("md") {
         width: rem(301);
         height: rem(138);
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: -3.5%;
+        top: rem(-77);
     }
 }

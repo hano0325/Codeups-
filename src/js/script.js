@@ -159,22 +159,48 @@ box.each(function(){
     });
   });
 
-    // コース画像モーダル表示イベント
-    $(".gallery-list__item img").click(function () {
-      // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
-      $("#grayDisplay").html($(this).prop("outerHTML"));
-      //そして、fadeInで表示する。
-      $("#grayDisplay").fadeIn(200);
-      return false;
-    });
+    // // コース画像モーダル表示イベント
+    // $(".gallery-list__item img").click(function () {
+    //   // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
+    //   $("#grayDisplay").html($(this).prop("outerHTML"));
+    //     // ページ全体のスクロールを無効にする（bodyのoverflowをhiddenに）
+    //   $("body").css("overflow", "hidden");
+    //   //そして、fadeInで表示する。
+    //   $("#grayDisplay").fadeIn(200);
+    //   return false;
+    // });
 
-    $("#grayDisplay").click(function () {
-      // 非表示にする
-      $("#grayDisplay").fadeOut(200);
-      return false;
-    });
-
+    // $("#grayDisplay").click(function () {
+    //   // 非表示にする
+    //   $("#grayDisplay").fadeOut(200);
+    //   return false;
+    // });
+// コース画像モーダル表示イベント
+$(".gallery-list__item img").click(function () {
+  // クリックした画像の HTML(<img>タグ全体)を#grayDisplay内にコピー
+  $("#grayDisplay").html($(this).prop("outerHTML"));
   
+  // ページ全体のスクロールを無効にする（bodyのoverflowをhiddenに）
+  $("body").css("overflow", "hidden");
+  
+  // #grayDisplayをフェードインし、固定表示にする
+  $("#grayDisplay").css({
+ // モーダル背景を黒っぽくする
+  }).fadeIn(200);  // 200ミリ秒でフェードイン
+
+  return false;  // デフォルトのリンク動作を防止
+});
+
+// モーダルクリック時の動作
+$("#grayDisplay").click(function () {
+  // モーダルをフェードアウトし、スクロールを元に戻す
+  $("#grayDisplay").fadeOut(200, function () {
+    $("body").css("overflow", "auto");  // スクロールを元に戻す
+  });
+  
+  return false;
+});
+
     // アーカイブのトグル
     document.querySelectorAll('.archive-list__year').forEach(toggleButton => {
       toggleButton.addEventListener('click', () => {

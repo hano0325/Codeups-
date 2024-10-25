@@ -117,6 +117,12 @@
     top: -8%;
 }
 
+.menu__nav-item-main--green::before {
+    content: url(../images/common/hitode-gray.svg);
+}
+
+
+
 .menu__nav-item-sub a{
     padding-left: 1em;
 }

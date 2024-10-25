@@ -15,7 +15,8 @@
     z-index: -100;
     display: inline-block;
     left: calc(50% - min(48vw, 11rem));
-    top: -1.2%;
+    top: rem(-24);
+    
     @include mq("md") {
         width: rem(301);
         height: rem(138);
@@ -23,7 +24,7 @@
         z-index: -100;
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: -3.5%;
+        top: rem(-72);
     }
 }
 .campaign-lower__inner {
@@ -41,6 +42,6 @@
 .campaign-lower__pagenavi{
     margin-top: rem(80);
     @include mq("md") {
-        margin-top: rem(64);
+        margin-top: rem(67.2);
     }
 }

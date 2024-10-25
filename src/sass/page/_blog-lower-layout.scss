@@ -6,8 +6,8 @@
     @include mq("md") {
         margin-top: rem(150);
         display: flex;
+        gap: rem(37);
         justify-content: center;
-        flex-wrap: wrap;
     }
 }
 
@@ -22,13 +22,13 @@
     z-index: 100;
     display: inline-block;
     left: calc(50% - min(48vw, 11rem));
-    top: -0.5%;
+    top: rem(-24);
     @include mq("md") {
         width: rem(301);
         height: rem(138);
         z-index: -100;
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: -2.5%;
+        top: rem(-70);
     }
 }

@@ -4,7 +4,7 @@
     position: relative;
     margin-top: rem(52);
     @include mq("md") {
-        margin-top: rem(140);
+        margin-top: rem(200);
     }
 }
 
@@ -19,13 +19,13 @@
     z-index: 100;
     display: inline-block;
     left: calc(50% - min(48vw, 11rem));
-    top: -3%;
+    top: rem(-25);
     z-index: -100;
     @include mq("md") {
         width: rem(301);
         height: rem(138);
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: -3.5%;
+        top: rem(-122);
     }
 }

@@ -9,26 +9,15 @@
     }
   }
 
-  .cards-voice {
-    display: grid;
+  .cards--blog {
     grid-template-columns: repeat(1, 1fr);
-    gap: rem(30);
-    @include mq("md") {
-      grid-template-columns: repeat(2, 1fr);
-      gap: rem(30);
-    }
-  }
-
-  .cards-lower-blog {
-    display: grid;
     row-gap: rem(40);
-    grid-template-columns: repeat(1, 1fr);
     @include mq("md") {
       grid-template-columns: repeat(2, 1fr);
       column-gap: rem(40);
       row-gap: rem(80);
+    }
   }
-}
 
 .cards-article {
   display: flex;
