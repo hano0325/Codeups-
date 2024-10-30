@@ -22,9 +22,14 @@
 
 .pagenavi .wp-pagenavi .page-larger,
 .pagenavi .wp-pagenavi span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin: 0 rem(6);
-	padding: rem(9.12) rem(14.24);
+	padding: 0 rem(12);
+    height: rem(38);
+    min-width: rem(38);
     font-size: rem(16);
     font-weight: $bold;
     line-height: 1.1875;
@@ -35,11 +40,24 @@
     transition: .3s;
 }
 
+.pagenavi .wp-pagenavi .page-larger:nth-child(n+6),
+.pagenavi .wp-pagenavi span:nth-child(n+6) {
+    display: none;
+    @include mq("md") {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .pagenavi .wp-pagenavi .previouspostslink,
 .pagenavi .wp-pagenavi .nextpostslink {
     position: relative;
+    height: rem(38);
+    min-width: rem(38);
+    position: relative;
     display: inline-block;
-	padding: rem(18.4);
+	padding: 0 rem(15);
 	white-space: nowrap;
     color: $lightblue;
     border: 1px solid $lightblue;

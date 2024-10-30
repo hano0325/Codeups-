@@ -159,22 +159,6 @@ box.each(function(){
     });
   });
 
-    // // コース画像モーダル表示イベント
-    // $(".gallery-list__item img").click(function () {
-    //   // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
-    //   $("#grayDisplay").html($(this).prop("outerHTML"));
-    //     // ページ全体のスクロールを無効にする（bodyのoverflowをhiddenに）
-    //   $("body").css("overflow", "hidden");
-    //   //そして、fadeInで表示する。
-    //   $("#grayDisplay").fadeIn(200);
-    //   return false;
-    // });
-
-    // $("#grayDisplay").click(function () {
-    //   // 非表示にする
-    //   $("#grayDisplay").fadeOut(200);
-    //   return false;
-    // });
 // コース画像モーダル表示イベント
 $(".gallery-list__item img").click(function () {
   // クリックした画像の HTML(<img>タグ全体)を#grayDisplay内にコピー

@@ -15,11 +15,6 @@
     }
 }
 
-.tab__button,
-.tab__button--information {
-    cursor: pointer;
-}
-
 .tab__button {
     border: 1px solid $lightblue;
     color: $lightblue;
@@ -32,30 +27,6 @@
     transition: all .3s;
     @include mq("md") {
         width: 15%;
-    }
-}
-
-.tab__button--information {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $lightblue;
-    background-color: $lightblue2;
-    width: 100%;
-    font-size: rem(14);
-    padding: rem(10);
-    line-height: 1.4285;
-    writing-mode: horizontal-tb;
-    transition: all .3s;
-    box-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, .25);
-    @include mq("md") {
-        width: 100%;
-        line-height: 1.4583;
-        white-space: nowrap;
-        padding: rem(12.8);
-        font-size: rem(24);
-        box-shadow: none;
     }
 }
 

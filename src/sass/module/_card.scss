@@ -231,10 +231,10 @@
     }
 }
 
-.card-areview_img img {
+.card-reviews__img img {
     width: 100%;
     height: auto;
-    aspect-ratio: 294 / 218 ;
+    aspect-ratio: 294 / 218;
     object-fit: cover;
 }
 
@@ -254,14 +254,6 @@
     line-height: 1.4583;
     color: $blue;
     margin-top: rem(8);
-}
-
-.card-lower-detail__date {
-    font-family: $Gotu-font;
-    font-weight: $normal;
-    color: $blue;
-    font-size: rem(14);
-    line-height: 1.2857;
 }
 
 .card-lower-detail__title {
@@ -296,42 +288,34 @@
     }
 }
 
-.card-lower-detail__main-text,
-.card-lower-detail__sub-text,
-.card-lower-detail__content-list-text,
-.card-lower-detail__content-list-items {
+.card-lower-detail__entry {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(24);
+    gap: rem(24);
+    @include mq("md") {
+        margin-top: rem(40);
+        gap: rem(40);
+    }
+}
+
+.card-lower-detail__entry p,
+.card-lower-detail__entry li {
     font-size: rem(16);
     line-height: 1.5;
     font-family: $base-font-family;
     font-weight: $normal;
     color: $blue;
-    margin-top: rem(24);
-    @include mq("md") {
-        margin-top: rem(40);
-    }
 }
 
-.card-lower-detail__content-list-item {
+.card-lower-detail__entry li {
     padding-left: rem(21);
     position: relative;
 }
 
-.card-lower-detail__content-list-item:not(:first-child) {
-    margin-top: rem(4);
-}
-
-.card-lower-detail__content-list-item::before {
+.card-lower-detail__entry li::before {
     position: absolute;
     content: url(../images/common/hitode-blue.svg);
     left: rem(-0.25);
-    top: 12%;
-}
-
-
-.card-lower-detail__content-list-text {
-    margin-top: rem(24);
-    @include mq("md") {
-        margin-top: rem(40);
-    }
 }
 
