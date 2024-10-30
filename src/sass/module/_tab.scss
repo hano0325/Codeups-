@@ -25,6 +25,7 @@
     line-height: 1.5714;
     writing-mode: horizontal-tb;
     transition: all .3s;
+    cursor: pointer;
     @include mq("md") {
         width: 15%;
     }
@@ -38,7 +39,7 @@
 .tab__button.is-active {
     background-color: $lightblue;
     color: $white;
-    display: block;
+    display: inline-block;
   }
 
 

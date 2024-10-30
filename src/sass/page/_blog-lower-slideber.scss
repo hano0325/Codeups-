@@ -6,8 +6,8 @@
     margin-right: auto;
     margin-left: auto;
     @include mq("md") {
-        max-width: none;
-        padding: 0;
+    max-width: none;
+    padding: 0;
     }
 }
 
