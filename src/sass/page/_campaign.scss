@@ -71,7 +71,7 @@
     @include mq("md") {
         position: absolute;
         right: 15%;
-        top: 4%;
+        top: rem(42);
         width: rem(240);
     }
 }

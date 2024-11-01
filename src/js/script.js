@@ -231,5 +231,31 @@ $("#grayDisplay").click(function () {
       });
     });
 
+  document.addEventListener("DOMContentLoaded", function() {
+    // URLのクエリパラメータから"tab"の値を取得
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabParam = urlParams.get("tab");
+
+    // タブボタンとコンテンツを取得
+    const tabButtons = document.querySelectorAll(".js-tab-button");
+    const tabContents = document.querySelectorAll(".js-tab-content");
+
+    // クエリパラメータに対応するタブを表示
+    if (tabParam) {
+      // すべてのタブボタンとコンテンツから"アクティブ"クラスを除去
+      tabButtons.forEach(button => button.classList.remove("is-active"));
+      tabContents.forEach(content => content.classList.remove("is-active"));
+
+      // 対応するタブボタンとコンテンツに"アクティブ"クラスを追加
+      const activeButton = document.querySelector(`.js-tab-button[data-number="${tabParam}"]`);
+      const activeContent = document.getElementById(tabParam);
+      if (activeButton && activeContent) {
+        activeButton.classList.add("is-active");
+        activeContent.classList.add("is-active");
+      }
+    }
+  });
+
+
 
 

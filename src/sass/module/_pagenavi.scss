@@ -90,10 +90,10 @@
     content: "";
     display: inline-block;
     position: absolute;
-    top: 13px;
-    left: 11px;
-    height: 11px;
-    width: 11px;
+    top: rem(13);
+    right: rem(15);
+    height: rem(11);
+    width: rem(11);
     border-top: 1px solid $lightblue;
     border-right: 1px solid $lightblue;
     transform: rotate(45deg);

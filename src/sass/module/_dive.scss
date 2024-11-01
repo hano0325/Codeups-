@@ -121,12 +121,14 @@
 }
 
 .dive__container-subtext {
-    font-weight: $bold;
+    font-weight: $normal;
+    font-family: $base-font-family;
+    font-size: rem(16);
+    line-height: 1.5;
     margin-top: rem(16);
     @include mq("md") {
         display: flex;
-        width: 100%;
-        font-size: rem(16);
+        width: 90%;
         color: $white;
     }
 }

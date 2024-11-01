@@ -44,11 +44,11 @@
   <body>
     <header class="header">
       <div class="header__inner">
-        <h2 class="header__logo">
+        <div class="header__logo">
           <a href="index.html">
             <img src="./assets/images/common/CodeUps.svg" alt="Codeups"
           /></a>
-        </h2>
+        </div>
         <button class="header__hamburger hamburger js-hamburger">
           <span></span>
           <span></span>
@@ -92,11 +92,11 @@
         </ul>
         <nav class="header__drawer drawer js-drawer">
           <div class="drawer__inner">
-            <h2 class="drawer__logo">
+            <div class="drawer__logo">
               <a href="index.html">
                 <img src="./assets/images/common/CodeUps.svg" alt="Codeups"
               /></a>
-            </h2>
+            </div>
             <button class="drawer__hamburger hamburger js-hamburger">
               <span></span>
               <span></span>
@@ -128,16 +128,16 @@
                   </ul>
                   <ul class="menu__nav-item">
                     <li class="menu__nav-item-main">
-                      <a href="#">ダイビング情報</a>
+                      <a href="information.html">ダイビング情報</a>
                     </li>
                     <li class="menu__nav-item-sub">
-                      <a href="#">ライセンス講習</a>
+                      <a href="information.html?tab=tab01">ライセンス講習</a>
                     </li>
                     <li class="menu__nav-item-sub">
-                      <a href="#">体験ダイビング</a>
+                      <a href="information.html?tab=tab03">体験ダイビング</a>
                     </li>
                     <li class="menu__nav-item-sub">
-                      <a href="#">ファンダイビング</a>
+                      <a href="information.html?tab=tab02">ファンダイビング</a>
                     </li>
                   </ul>
                   <ul class="menu__nav-item">
@@ -241,7 +241,7 @@
         <div class="blog-lower__section">
           <div class="blog-lower__container">
             <ul class="blog-lower__cards cards cards--blog">
-              <li class="card">
+              <li class="cards__card card">
                 <a href="blog-detail.html" class="card__container">
                   <div class="card__content">
                     <img
@@ -469,7 +469,7 @@
                 <div class="title-side__container-img-fish">
                   <img src="./assets/images/common/fish-title.svg" alt="">
                 </div>
-                <h3 class="title-side__main">人気記事</h3>
+                <h2 class="title-side__main">人気記事</h2>
               </div>
               </div>
               <ul class="blog-lower-slideber__article-cards cards-article">
@@ -528,7 +528,7 @@
                     <div class="title-side__container-img-fish">
                       <img src="./assets/images/common/fish-title.svg" alt="">
                     </div>
-                    <h3 class="title-side__main">口コミ</h3>
+                    <h2 class="title-side__main">口コミ</h2>
                   </div>
                 </div>
                 <ul class="blog-lower-reviews__cards cards-reviews">
@@ -569,7 +569,7 @@
                   <div class="title-side__container-img-fish">
                     <img src="./assets/images/common/fish-title.svg" alt="">
                   </div>
-                  <h3 class="title-side__main">キャンペーン</h3>
+                  <h2 class="title-side__main">キャンペーン</h2>
                 </div>
               </div>
               <div class="blog-lower-campaign__contents">
@@ -650,7 +650,7 @@
                       <div class="title-side__container-img-fish">
                         <img src="./assets/images/common/fish-title.svg" alt="">
                       </div>
-                      <h3 class="title-side__main">アーカイブ</h3>
+                      <h2 class="title-side__main">アーカイブ</h2>
                     </div>
                   </div>
                   <div class="blog-lower-archive__container archive">
@@ -660,9 +660,15 @@
                           2023
                         </button>
                         <ul class="archive-list__months">
-                          <li class="archive-list__month">3月</li>
-                          <li class="archive-list__month">2月</li>
-                          <li class="archive-list__month">1月</li>
+                          <li class="archive-list__month">
+                            <a href="#">3月</a>
+                          </li>
+                          <li class="archive-list__month">
+                            <a href="#">2月</a>
+                          </li>
+                          <li class="archive-list__month">
+                            <a href="#">1月</a>
+                          </li>
                         </ul>
                       </li>
                       <li class="archive-list__item">
@@ -673,8 +679,8 @@
                     </ul>
                   </div>
                 </aside>
-              </aside>
-            </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
@@ -805,16 +811,16 @@
               <div class="menu__nav-content">
                 <ul class="menu__nav-item">
                   <li class="menu__nav-item-main">
-                    <a href="#">ダイビング情報</a>
+                    <a href="information.html">ダイビング情報</a>
                   </li>
                   <li class="menu__nav-item-sub">
-                    <a href="#">ライセンス講習</a>
+                    <a href="information.html?tab=tab01">ライセンス講習</a>
                   </li>
                   <li class="menu__nav-item-sub">
-                    <a href="#">体験ダイビング</a>
+                    <a href="information.html?tab=tab03">体験ダイビング</a>
                   </li>
                   <li class="menu__nav-item-sub">
-                    <a href="#">ファンダイビング</a>
+                    <a href="information.html?tab=tab02">ファンダイビング</a>
                   </li>
                 </ul>
                 <ul class="menu__nav-item">
@@ -833,7 +839,7 @@
                 </ul>
                 <ul class="menu__nav-item">
                   <li class="menu__nav-item-main">
-                    <a href="#">料金一覧</a>
+                    <a href="price.html">料金一覧</a>
                   </li>
                   <li class="menu__nav-item-sub">
                     <a href="#">ライセンス講習</a>

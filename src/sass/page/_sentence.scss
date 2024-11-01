@@ -20,7 +20,7 @@
     font-family: $base-font-family;
     font-size: rem(24);
     line-height: 1.4583;
-    font-weight: $normal;
+    font-weight: $medium;
     @include mq("md"){
         font-size: rem(32);
         line-height: 1.4375;

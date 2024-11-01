@@ -316,6 +316,7 @@
 .card-lower-detail__entry li::before {
     position: absolute;
     content: url(../images/common/hitode-blue.svg);
+    top: rem(2);
     left: rem(-0.25);
 }
 
