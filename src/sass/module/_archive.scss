@@ -12,12 +12,6 @@
     color: $lightblue;
     font-size: rem(24);
     line-height: 1.4583;
-    transition: .3s;
-}
-
-.archive-list__year:hover,
-.archive-list__month:hover {
-  opacity: 0.7;
 }
 
 .archive-list__year::before, 

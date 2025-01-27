@@ -39,31 +39,6 @@
     }
 }
 
-.sentence__items p {
-    margin-top: rem(20);
-}
-
-
-.sentence__items ol{
-    counter-reset: number;
-    padding-left: rem(20.8);
-    text-indent: rem(-15);
-}
-
-
-.sentence__items ol:first-of-type{
-    margin-top: rem(20);
-    @include mq("md") {
-        margin-top: rem(36);
-    }
-}
-
-.sentence__items ol li::before{
-	content: counter(number) ". ";
-    counter-increment: number;
-}
-
-
 
 .sentence__item {
     margin-top: rem(20);
@@ -96,6 +71,4 @@
 .sentence__description-disc::before {
     content: "• ";
 }
-
-
 

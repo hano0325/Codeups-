@@ -4,7 +4,7 @@
     position: relative;
     margin-top: rem(52);
     @include mq("md") {
-        margin-top: rem(137);
+        margin-top: rem(150);
     }
 }
 
@@ -26,6 +26,6 @@
         height: rem(138);
         display: inline-block;
         left: calc(50% - min(48vw, 39rem));
-        top: rem(-122);
+        top: rem(-74);
     }
 }

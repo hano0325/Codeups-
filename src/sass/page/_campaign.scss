@@ -67,10 +67,8 @@
     }
   }
 
-  .campaign__button-container {
-    display: none;
+.campaign__button-container {
     @include mq("md") {
-        display: inline-block;
         position: absolute;
         right: 15%;
         top: rem(42);

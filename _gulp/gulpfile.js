@@ -17,8 +17,8 @@ const imageminMozjpeg = require("imagemin-mozjpeg"); // JPEGを最適化する�
 const imageminPngquant = require("imagemin-pngquant"); // PNGを最適化するためのモジュール
 const changed = require("gulp-changed"); // 変更されたファイルのみを対象にするためのモジュール
 const del = require("del"); // ファイルやディレクトリを削除するためのモジュール
-const webp = require("gulp-webp"); //webp変換
-const rename = require("gulp-rename"); //ファイル名変更
+const webp = require('gulp-webp');//webp変換
+const rename = require('gulp-rename');//ファイル名変更
 const themeName = "WordPressTheme"; // WordPress theme name
 
 // 読み込み先
@@ -47,15 +47,8 @@ const destWpPath = {
   img: `../${themeName}/assets/images/`,
 };
 
-const browsers = [
-  "last 2 versions",
-  "> 5%",
-  "ie = 11",
-  "not ie <= 10",
-  "ios >= 8",
-  "and_chr >= 5",
-  "Android >= 5",
-];
+
+const browsers = ["last 2 versions", "> 5%", "ie = 11", "not ie <= 10", "ios >= 8", "and_chr >= 5", "Android >= 5"];
 
 // HTMLファイルのコピー
 const htmlCopy = () => {
@@ -94,12 +87,11 @@ const cssSass = () => {
       )
       // CSSプロパティをアルファベット順にソートし、未来のCSS構文を使用可能に
       .pipe(
-        postcss([
-          cssdeclsort({
-            order: "alphabetical",
-          }),
-        ]),
-        postcssPresetEnv({ browsers: "last 2 versions" })
+        postcss([cssdeclsort({
+          order: "alphabetical"
+        })]
+        ),
+        postcssPresetEnv({ browsers: 'last 2 versions' })
       )
       // メディアクエリを統合
       .pipe(mmq())
@@ -120,28 +112,30 @@ const cssSass = () => {
 
 // 画像圧縮
 const imgImagemin = () => {
-  // 変更があった画像のみ処理対象にし、複数の保存先に対応する
-  return src(srcPath.img)
-    .pipe(changed(destPath.img)) // 最初の保存先で変更を検出
-    .pipe(
-      imagemin(
-        [
-          imageminMozjpeg({ quality: 80 }), // JPEG画像の圧縮
-          imageminPngquant(), // PNG画像の圧縮
-          imageminSvgo({ plugins: [{ removeViewbox: false }] }), // SVG画像の圧縮
-        ],
-        { verbose: true }
-      )
-    )
-    .pipe(dest(destPath.img)) // 最初の保存先に保存
-    .pipe(webp()) // webpに変換
-    .pipe(dest(destPath.img)) // webpを最初の保存先に保存
-    .pipe(src(srcPath.img)) // 再度画像ソースを読み込み
-    .pipe(changed(destWpPath.img)) // WordPress用の保存先で変更を検出
-    .pipe(dest(destWpPath.img)) // WordPress用の保存先に保存
-    .pipe(webp()) // webpに変換
-    .pipe(dest(destWpPath.img)); // webpをWordPress用の保存先に保存
+// 変更があった画像のみ処理対象にし、複数の保存先に対応する
+return src(srcPath.img)
+.pipe(changed(destPath.img)) // 最初の保存先で変更を検出
+.pipe(
+imagemin(
+[
+imageminMozjpeg({ quality: 80 }), // JPEG画像の圧縮
+imageminPngquant(), // PNG画像の圧縮
+imageminSvgo({ plugins: [{ removeViewbox: false }] }), // SVG画像の圧縮
+],
+{ verbose: true }
+)
+)
+.pipe(dest(destPath.img)) // 最初の保存先に保存
+.pipe(webp()) // webpに変換
+.pipe(dest(destPath.img)) // webpを最初の保存先に保存
+.pipe(src(srcPath.img)) // 再度画像ソースを読み込み
+.pipe(changed(destWpPath.img)) // WordPress用の保存先で変更を検出
+.pipe(dest(destWpPath.img)) // WordPress用の保存先に保存
+.pipe(webp()) // webpに変換
+.pipe(dest(destWpPath.img)); // webpをWordPress用の保存先に保存
 };
+
+
 
 // js圧縮
 const jsBabel = () => {
@@ -170,7 +164,7 @@ const browserSyncOption = {
   notify: false,
   // server: "../dist/", // ローカルサーバーのルートディレクトリ
   //WordPressの場合は↓を有効にする。その場合、↑(server)はコメントアウトする。
-  proxy: "CodeUps-WordPress.local", // ローカルサーバーのURL（WordPress）
+  proxy: "Codeups-WordPress.local", // ローカルサーバーのURL（WordPress）
 };
 const browserSyncFunc = () => {
   browserSync.init(browserSyncOption);
@@ -194,10 +188,7 @@ const watchFiles = () => {
 };
 
 // ブラウザシンク付きの開発用タスク
-exports.default = series(
-  series(cssSass, jsBabel, imgImagemin, htmlCopy),
-  parallel(watchFiles, browserSyncFunc)
-);
+exports.default = series(series(cssSass, jsBabel, imgImagemin, htmlCopy), parallel(watchFiles, browserSyncFunc));
 
 // 本番用タスク
 exports.build = series(clean, cssSass, jsBabel, imgImagemin, htmlCopy);
