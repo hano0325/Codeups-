@@ -8,6 +8,13 @@ padding-bottom: rem(80);
  }
 }
 
+.footer-404--mt0 {
+    margin-top: 0;
+    @include mq("md") {
+        margin-top: 0;
+    }
+}
+
 .footer__nav-container {
     @include mq("md") {
         display: flex;

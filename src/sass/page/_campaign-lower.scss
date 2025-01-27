@@ -40,5 +40,8 @@
 }
 
 .campaign-lower__pagenavi{
-    margin-top: rem(80);
+    margin-top: rem(75.2);
+    @include mq("md") {
+        margin-top: rem(83.2);
+    }
 }

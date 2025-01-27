@@ -53,7 +53,7 @@
 }
 
 
-.tab-voice__contents-content.is-active {
+.tab-voice__contents-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: rem(40);
@@ -68,8 +68,5 @@
         margin-right: 0;
         margin-left: 0;
     }
-}
-.tab-voice__contents-content {
-    display: none;
 }
 

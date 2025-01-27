@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
-    column-gap: rem(32);
-    row-gap: rem(16);
+    column-gap: rem(24);
+    row-gap: rem(12.8);
     text-align: center;
     @include mq("md") {
         display: flex;
@@ -39,16 +39,17 @@
 .tab__button.is-active {
     background-color: $lightblue;
     color: $white;
-    display: inline-block;
   }
 
 
 .tab__campaign-contents {
     margin-top: rem(45);
+    @include mq("md"){
+        margin-top: rem(35.2);
+    }
 }
 
-
-.tab__campaign-contents-content.is-active {
+.tab__campaign-contents-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: rem(52);
@@ -64,9 +65,6 @@
         margin-right: 0;
         margin-left: 0;
     }
-}
-.tab__campaign-contents-content {
-    display: none;
 }
 
 .tab__campaign-container {
@@ -153,6 +151,10 @@
     line-height: 1.5;
     border-bottom: 1px solid $lightblue;
     padding-bottom: rem(8);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
     @include mq("md") {
         font-size: rem(24);
         line-height: 1.458;
@@ -184,7 +186,7 @@
 
 .tab__campaign-fee {
     display: flex;
-    margin-top: rem(8);
+    margin-top: rem(9);
     align-items: center;
     justify-content: center;
 }
@@ -207,7 +209,7 @@
 }
 
 .tab__campaign-main {
-    font-size: rem(32);
+    font-size: rem(27.2);
     line-height: 1;
     font-family: $lato-font;
     font-weight: $bold;

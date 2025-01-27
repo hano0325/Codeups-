@@ -37,7 +37,7 @@
     font-weight: $regular;
     color: $white;
     transform: translate(-50%, 50%);
-    top: 38%;
+    top: 35%;
     left: 48%;
     width: 100%;
     text-align: center;
@@ -76,10 +76,10 @@
 
 .mv-lower {
   position: relative;
-  height: rem(460);
+  height: rem(416);
   min-height: rem(400);
   @include mq("md") {
-    height: rem(548);
+    height: rem(516);
   }
 }
 
@@ -108,7 +108,7 @@
   font-weight: $regular;
   color: $white;
   transform: translate(-50%, 50%);
-  top: 40%;
+  top: 35%;
   left: 50%;
   width: 100%;
   text-align: center;
@@ -120,12 +120,12 @@
 
 .mv-lower__title-main {
   font-family: $lato-font;
-  font-size: rem(40);
+  font-size: rem(36.8);
   line-height: 1.2;
   font-weight: $normal;
   @include mq("md") {
     width: 100%;
-    font-size: rem(80);
+    font-size: rem(70.4);
     line-height: 1.25;
   }
 }

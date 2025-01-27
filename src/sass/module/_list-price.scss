@@ -70,8 +70,8 @@
     font-family: $base-font-family;
     padding-top: rem(6);
     padding-bottom: rem(6);
-    padding-right: rem(25);
-    padding-left: rem(25);
+    padding-right: rem(20);
+    padding-left: rem(20);
     text-align: center;
     @include mq("md") {
         width: 73%;
@@ -101,7 +101,6 @@
         padding-bottom: rem(18);
         padding-right: rem(16);
         padding-left: rem(82);
-        text-align: left;
     }
 }
 
