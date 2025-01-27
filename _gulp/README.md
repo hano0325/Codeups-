@@ -59,6 +59,7 @@ aaaaaaaaaaa# CodeUps-WordPress
 
 ああああ
 あああああああ
+<<<<<<< HEAD
 テスてす
 
 かえた
