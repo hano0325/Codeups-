@@ -22,8 +22,8 @@
             $counter = 1;
             $args = [
             "post_type" => "fee",
-            "orderby" => "date", // 日付順
-            "order" => "ASC", // 昇順
+            "orderby" => "date",
+            "order" => "ASC",
              ];
             $the_query = new WP_Query($args);
             ?>

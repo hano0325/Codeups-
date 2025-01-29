@@ -4,54 +4,57 @@ jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
   $(".js-hamburger, .js-drawerClose").on("click", function () {
     if ($(".js-hamburger").hasClass("is-active")) {
-      closeDrawer();
+        closeDrawer();
     } else {
-      openDrawer();
+        openDrawer();
     }
-  });
-  // ページ内スクロール
-  $(function () {
+});
+
+// ページ内スクロール
+$(function () {
     // ヘッダーの高さ取得
     const headerHeight = $(".header").outerHeight();
     if (headerHeight) {
-      console.log(`Header height: ${headerHeight}px`);
+        console.log(`Header height: ${headerHeight}px`);
     } else {
-      console.log(
-        "Header element does not exist or its height could not be retrieved."
-      );
+        console.log("Header element does not exist or its height could not be retrieved.");
     }
+    
     const hash = location.hash;
-    if (hash)  {
-      $("html, body").stop().scrollTop(0);
-      scroll(hash, headerHeight);
+    if (hash) {
+        $("html, body").stop().scrollTop(0);
+        scroll(hash, headerHeight);
     }
 
     $('a[href*="#"]').click(function () {
-      // ヘッダーの高さ分下げる
-      $(".js-hamburger").removeClass("is-active"); // ハンバーガーボタンの状態をリセット
-      $(".js-drawer").removeClass("is-active"); // メニューを非表示状態にする
-      // メニューコンテナを非表示に設定
-      $(".js-drawer").css("display", "none");
-      var href = $(this).attr("href");
-      scroll(href, headerHeight);
-      return false;
-      });
+        // ヘッダーの高さ分下げる
+        $(".js-hamburger").removeClass("is-active"); // ハンバーガーボタンの状態をリセット
+        $(".js-drawer").removeClass("is-active"); // メニューを非表示状態にする
+        $(".js-drawer").css("display", "none"); // メニューコンテナを非表示に設定
+        
+        var href = $(this).attr("href");
+        scroll(href, headerHeight);
+        return false;
     });
+});
 
-  function scroll(href, headerHeight) {
+function scroll(href, headerHeight) {
     var speed = 600;
     href = '#' + href.split('#')[1];
     console.log(href);
+    
     let target = $(href == "#" || href == "" ? "html" : href);
     var position = target.offset().top - headerHeight;
-    $("body.html").animate(
-      {
-      scrollTop: position,
-      },
-      speed,
-      "swing"
-     );
-    }
+    
+    $("html, body").animate(
+        {
+            scrollTop: position,
+        },
+        speed,
+        "swing"
+    );
+}
+
   // resizeイベント
   $(window).resize(function () {
     if (window.matchMedia("(min-width: 768px)").matches) {
