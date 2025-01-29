@@ -82,6 +82,7 @@ $(window).scroll(function () {
     topBtn.fadeOut();
   }
 });
+});
 document.addEventListener("DOMContentLoaded", function () {
   // mvセクション用のSwiper
   var mvSwiper = new Swiper(".js-mv-swiper", {
@@ -137,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-});
   //要素の取得とスピードの設定
   var box = $(".colorbox"),
     speed = 700;
