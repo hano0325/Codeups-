@@ -61,3 +61,4 @@ aaaaaaaaaaa# CodeUps-WordPress
 あああああああ
 aaaaaaa
 テステス
+コンフリクト完了
