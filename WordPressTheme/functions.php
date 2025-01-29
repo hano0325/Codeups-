@@ -313,12 +313,12 @@ function display_popular_posts_shortcode($atts) {
         echo '<ul class="popular-posts">';
         while ($popular_query->have_posts()): $popular_query->the_post();
             ?>
-	<li>
-	    <a href="<?php the_permalink(); ?>">
-	        <?php the_title(); ?> (<?php echo getPostViews(get_the_ID()); ?>)
-	    </a>
-	</li>
-	<?php
+<li>
+    <a href="<?php the_permalink(); ?>">
+        <?php the_title(); ?> (<?php echo getPostViews(get_the_ID()); ?>)
+    </a>
+</li>
+<?php
         endwhile;
         echo '</ul>';
     } else {
